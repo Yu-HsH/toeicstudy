@@ -78,6 +78,11 @@ function App() {
     showNotice('문제를 삭제했습니다.')
   }
 
+  const importQuestions = (imported: Question[]) => {
+    setQuestions((current) => [...imported, ...current])
+    showNotice(`${imported.length}??? CSV?? ??????.`)
+  }
+
   return (
     <div className="app-shell">
       <header className="app-header">
@@ -137,7 +142,11 @@ function App() {
         )}
         {activeTab === 'stats' && <StatsPage questions={questions} />}
         {activeTab === 'list' && (
-          <ListPage questions={questions} onDelete={deleteQuestion} />
+          <ListPage
+            questions={questions}
+            onDelete={deleteQuestion}
+            onImport={importQuestions}
+          />
         )}
       </main>
 

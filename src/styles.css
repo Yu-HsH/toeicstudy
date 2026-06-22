@@ -85,6 +85,9 @@ input:focus, select:focus, textarea:focus { border-color: #4b76dd; box-shadow: 0
 .empty-state p { max-width: 480px; margin: 0 0 18px; color: #697386; }
 .empty-icon { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; color: #1d4ed8; background: #e8efff; font-size: 22px; }
 .filter-panel { display: grid; grid-template-columns: minmax(220px, 1fr) auto auto auto; gap: 10px; align-items: center; margin-bottom: 18px; padding: 13px; }
+.list-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 7px; align-items: center; }
+.inline-notice { height: 0; overflow: hidden; color: #176743; font-size: 13px; opacity: 0; transition: .2s; }
+.inline-notice.visible { height: 28px; opacity: 1; }
 .toggle-filter { display: flex; gap: 8px; align-items: center; padding: 0 8px; white-space: nowrap; font-size: 13px; font-weight: 700; }
 .toggle-filter input { width: 17px; height: 17px; }
 .question-list { display: grid; gap: 15px; }
@@ -143,6 +146,7 @@ input:focus, select:focus, textarea:focus { border-color: #4b76dd; box-shadow: 0
   .header-summary { display: grid; gap: 2px; font-size: 11px; }
   .section-heading p { font-size: 13px; line-height: 1.5; }
   .split-heading { display: grid; }
+  .list-actions { justify-content: flex-start; }
   .question-form, .question-card { padding: 18px; }
   .two-columns, .choice-input-grid, .filter-panel { grid-template-columns: 1fr; }
   .search-field { grid-column: auto; }

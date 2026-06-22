@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useRef, useState, type ChangeEvent } from 'react'
 import { EmptyState } from '../components/EmptyState'
 import { QuestionDetails } from '../components/QuestionDetails'
 import {
@@ -8,17 +8,21 @@ import {
   type Part,
   type Question,
 } from '../types'
+import { downloadQuestionsCsv, parseQuestionsCsv } from '../utils/csv'
 
 interface ListPageProps {
   questions: Question[]
   onDelete: (id: string) => void
+  onImport: (questions: Question[]) => void
 }
 
-export function ListPage({ questions, onDelete }: ListPageProps) {
+export function ListPage({ questions, onDelete, onImport }: ListPageProps) {
   const [partFilter, setPartFilter] = useState<Part | 'all'>('all')
   const [reasonFilter, setReasonFilter] = useState<MistakeReason | 'all'>('all')
   const [wrongOnly, setWrongOnly] = useState(false)
   const [search, setSearch] = useState('')
+  const [importMessage, setImportMessage] = useState('')
+  const fileInputRef = useRef<HTMLInputElement>(null)
 
   const filtered = useMemo(() => {
     const keyword = search.trim().toLowerCase()
@@ -37,6 +41,25 @@ export function ListPage({ questions, onDelete }: ListPageProps) {
       .sort((a, b) => b.createdAt.localeCompare(a.createdAt))
   }, [partFilter, questions, reasonFilter, search, wrongOnly])
 
+
+  const handleImport = async (event: ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0]
+    if (!file) return
+    try {
+      const result = parseQuestionsCsv(await file.text())
+      if (result.questions.length > 0) onImport(result.questions)
+      setImportMessage(
+        `${result.questions.length}?? ???${
+          result.skipped > 0 ? ` ? ${result.skipped}? ???` : ''
+        }`,
+      )
+    } catch (error) {
+      setImportMessage(error instanceof Error ? error.message : 'CSV? ?? ?????.')
+    } finally {
+      event.target.value = ''
+      window.setTimeout(() => setImportMessage(''), 3000)
+    }
+  }
   return (
     <section className="page-section">
       <div className="section-heading split-heading">
@@ -45,9 +68,37 @@ export function ListPage({ questions, onDelete }: ListPageProps) {
           <h2>문제 목록</h2>
           <p>파트와 실수 원인으로 좁혀서 내 약점을 빠르게 찾으세요.</p>
         </div>
+        <div className="list-actions">
         <span className="total-label">{filtered.length}문제</span>
+          <input
+            ref={fileInputRef}
+            className="sr-only"
+            type="file"
+            accept=".csv,text/csv"
+            onChange={handleImport}
+          />
+          <button
+            className="button ghost small"
+            type="button"
+            onClick={() => fileInputRef.current?.click()}
+          >
+            CSV ????
+          </button>
+          <button
+            className="button ghost small"
+            type="button"
+            disabled={questions.length === 0}
+            onClick={() => downloadQuestionsCsv(questions)}
+          >
+            CSV ????
+          </button>
+        </div>
       </div>
 
+
+      <div className={`inline-notice ${importMessage ? 'visible' : ''}`} role="status">
+        {importMessage}
+      </div>
       <div className="filter-panel panel">
         <label className="field search-field">
           <span className="sr-only">문제 검색</span>
