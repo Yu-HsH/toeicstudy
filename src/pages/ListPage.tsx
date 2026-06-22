@@ -49,12 +49,12 @@ export function ListPage({ questions, onDelete, onImport }: ListPageProps) {
       const result = parseQuestionsCsv(await file.text())
       if (result.questions.length > 0) onImport(result.questions)
       setImportMessage(
-        `${result.questions.length}?? ???${
-          result.skipped > 0 ? ` ? ${result.skipped}? ???` : ''
+        `${result.questions.length}\uBB38\uC81C \uAC00\uC838\uC634${
+          result.skipped > 0 ? ` \u00B7 ${result.skipped}\uD589 \uAC74\uB108\uB700` : ''
         }`,
       )
     } catch (error) {
-      setImportMessage(error instanceof Error ? error.message : 'CSV? ?? ?????.')
+      setImportMessage(error instanceof Error ? error.message : 'CSV\uB97C \uC77D\uC9C0 \uBABB\uD588\uC2B5\uB2C8\uB2E4.')
     } finally {
       event.target.value = ''
       window.setTimeout(() => setImportMessage(''), 3000)
@@ -82,7 +82,7 @@ export function ListPage({ questions, onDelete, onImport }: ListPageProps) {
             type="button"
             onClick={() => fileInputRef.current?.click()}
           >
-            CSV ????
+            {'CSV \uAC00\uC838\uC624\uAE30'}
           </button>
           <button
             className="button ghost small"
@@ -90,7 +90,7 @@ export function ListPage({ questions, onDelete, onImport }: ListPageProps) {
             disabled={questions.length === 0}
             onClick={() => downloadQuestionsCsv(questions)}
           >
-            CSV ????
+            {'CSV \uB0B4\uBCF4\uB0B4\uAE30'}
           </button>
         </div>
       </div>

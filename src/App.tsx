@@ -80,7 +80,7 @@ function App() {
 
   const importQuestions = (imported: Question[]) => {
     setQuestions((current) => [...imported, ...current])
-    showNotice(`${imported.length}??? CSV?? ??????.`)
+    showNotice(`${imported.length}\uBB38\uC81C\uB97C CSV\uC5D0\uC11C \uAC00\uC838\uC654\uC2B5\uB2C8\uB2E4.`)
   }
 
   return (

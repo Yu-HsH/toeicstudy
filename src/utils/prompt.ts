@@ -29,5 +29,20 @@ ${choices}
 }
 
 export async function copyAnalysisPrompt(question: Question): Promise<void> {
-  await navigator.clipboard.writeText(createAnalysisPrompt(question))
+  const prompt = createAnalysisPrompt(question)
+  try {
+    await navigator.clipboard.writeText(prompt)
+    return
+  } catch {
+    const textarea = document.createElement('textarea')
+    textarea.value = prompt
+    textarea.setAttribute('readonly', '')
+    textarea.style.position = 'fixed'
+    textarea.style.opacity = '0'
+    document.body.appendChild(textarea)
+    textarea.select()
+    const copied = document.execCommand('copy')
+    textarea.remove()
+    if (!copied) throw new Error('Clipboard copy failed')
+  }
 }

@@ -54,8 +54,10 @@ export function downloadQuestionsCsv(questions: Question[]): void {
   const date = new Date().toISOString().slice(0, 10)
   anchor.href = url
   anchor.download = `toeic-questions-${date}.csv`
+  document.body.appendChild(anchor)
   anchor.click()
-  URL.revokeObjectURL(url)
+  anchor.remove()
+  window.setTimeout(() => URL.revokeObjectURL(url), 0)
 }
 
 function parseRows(csv: string): string[][] {
