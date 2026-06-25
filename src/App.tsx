@@ -4,6 +4,7 @@ import { ListPage } from './pages/ListPage'
 import { RegisterPage } from './pages/RegisterPage'
 import { SolvePage } from './pages/SolvePage'
 import { StatsPage } from './pages/StatsPage'
+import { VocabularyPage } from './pages/VocabularyPage'
 import {
   createStudySession,
   draftToQuestion,
@@ -14,6 +15,11 @@ import {
   saveQuestions,
   saveStudySessions,
 } from './storage'
+import {
+  getVocabularySummary,
+  loadVocabularyProgress,
+  saveVocabularyProgress,
+} from './vocabulary'
 import type {
   ChoiceKey,
   MistakeReason,
@@ -27,6 +33,7 @@ const TABS: { id: TabId; label: string; icon: string }[] = [
   { id: 'solve', label: '문제 풀기', icon: '▶' },
   { id: 'register', label: '문제 등록', icon: '＋' },
   { id: 'review', label: '오답 복습', icon: '↻' },
+  { id: 'vocab', label: '단어 복습', icon: 'Aa' },
   { id: 'stats', label: '통계', icon: '▥' },
   { id: 'list', label: '문제 목록', icon: '☷' },
 ]
@@ -34,6 +41,7 @@ const TABS: { id: TabId; label: string; icon: string }[] = [
 function App() {
   const [questions, setQuestions] = useState<Question[]>(loadQuestions)
   const [sessions, setSessions] = useState<StudySession[]>(loadStudySessions)
+  const [vocabularyProgress, setVocabularyProgress] = useState(loadVocabularyProgress)
   const [activeTab, setActiveTab] = useState<TabId>('solve')
   const [notice, setNotice] = useState('')
 
@@ -45,9 +53,17 @@ function App() {
     saveStudySessions(sessions)
   }, [sessions])
 
+  useEffect(() => {
+    saveVocabularyProgress(vocabularyProgress)
+  }, [vocabularyProgress])
+
   const mistakeCount = useMemo(
     () => questions.filter((question) => isReviewDue(question)).length,
     [questions],
+  )
+  const vocabularySummary = useMemo(
+    () => getVocabularySummary(vocabularyProgress),
+    [vocabularyProgress],
   )
 
   const showNotice = (message: string) => {
@@ -126,6 +142,9 @@ function App() {
           <span>
             오답 <strong>{mistakeCount}</strong>
           </span>
+          <span>
+            단어 <strong>{vocabularySummary.dueCount}</strong>
+          </span>
         </div>
       </header>
 
@@ -142,6 +161,9 @@ function App() {
             {tab.label}
             {tab.id === 'review' && mistakeCount > 0 && (
               <small className="nav-count">{mistakeCount}</small>
+            )}
+            {tab.id === 'vocab' && vocabularySummary.dueCount > 0 && (
+              <small className="nav-count">{vocabularySummary.dueCount}</small>
             )}
           </button>
         ))}
@@ -166,6 +188,12 @@ function App() {
             onAnswer={answerQuestion}
             onSessionComplete={addSession}
             onGoRegister={() => setActiveTab('register')}
+          />
+        )}
+        {activeTab === 'vocab' && (
+          <VocabularyPage
+            progress={vocabularyProgress}
+            onProgressChange={setVocabularyProgress}
           />
         )}
         {activeTab === 'stats' && <StatsPage questions={questions} sessions={sessions} />}

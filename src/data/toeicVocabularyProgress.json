@@ -1,0 +1,4999 @@
+{
+  "version": 1,
+  "createdAt": "2026-05-18T03:20:27.738Z",
+  "items": {
+    "day8:adopt": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-24T02:41:23.171Z",
+      "lastReviewedAt": "2026-06-23T02:41:23.171Z"
+    },
+    "day29:preserve": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-30T08:23:22.634Z",
+      "lastReviewedAt": "2026-06-24T08:23:22.634Z"
+    },
+    "day23:result": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-19T04:45:23.208Z",
+      "lastReviewedAt": "2026-05-18T04:45:23.208Z"
+    },
+    "day17:correspondence": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-21T02:20:29.753Z",
+      "lastReviewedAt": "2026-05-20T02:20:29.753Z"
+    },
+    "day11:research": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-03T08:42:28.820Z",
+      "lastReviewedAt": "2026-05-28T08:42:28.820Z"
+    },
+    "day12:flexible": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-19T04:45:47.998Z",
+      "lastReviewedAt": "2026-05-18T04:45:47.998Z"
+    },
+    "day16:completely": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-19T08:51:45.317Z",
+      "lastReviewedAt": "2026-05-18T08:51:45.317Z"
+    },
+    "day5:permanently": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-19T08:52:00.658Z",
+      "lastReviewedAt": "2026-05-18T08:52:00.658Z"
+    },
+    "day30:transmit": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.28,
+      "due": "2026-06-23T08:40:44.562Z",
+      "lastReviewedAt": "2026-06-22T08:40:44.562Z"
+    },
+    "day18:cuisine": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-19T08:52:21.746Z",
+      "lastReviewedAt": "2026-05-18T08:52:21.746Z"
+    },
+    "day11:development": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.6,
+      "due": "2026-06-01T05:20:17.513Z",
+      "lastReviewedAt": "2026-05-26T05:20:17.513Z"
+    },
+    "day6:live": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-19T23:45:46.618Z",
+      "lastReviewedAt": "2026-05-18T23:45:46.618Z"
+    },
+    "day21:announce": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-19T23:46:01.743Z",
+      "lastReviewedAt": "2026-05-18T23:46:01.743Z"
+    },
+    "day6:alumni": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-29T04:54:41.363Z",
+      "lastReviewedAt": "2026-05-28T04:54:41.363Z"
+    },
+    "day30:simple": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-19T23:46:24.091Z",
+      "lastReviewedAt": "2026-05-18T23:46:24.091Z"
+    },
+    "day19:decline": {
+      "reps": 3,
+      "lapses": 0,
+      "intervalDays": 15,
+      "ease": 2.56,
+      "due": "2026-07-08T04:58:53.473Z",
+      "lastReviewedAt": "2026-06-23T04:58:53.473Z"
+    },
+    "day19:figure": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-22T07:00:36.388Z",
+      "lastReviewedAt": "2026-05-21T07:00:36.388Z"
+    },
+    "day21:considerable": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-20T01:00:32.317Z",
+      "lastReviewedAt": "2026-05-19T01:00:32.317Z"
+    },
+    "day17:deliver": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.46,
+      "due": "2026-06-02T07:00:13.390Z",
+      "lastReviewedAt": "2026-05-27T07:00:13.390Z"
+    },
+    "day26:convert": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-02T03:40:27.460Z",
+      "lastReviewedAt": "2026-05-27T03:40:27.460Z"
+    },
+    "day14:confuse": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.5,
+      "due": "2026-05-20T01:00:52.117Z",
+      "lastReviewedAt": "2026-05-19T01:00:52.117Z"
+    },
+    "day14:depart": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-21T04:45:28.188Z",
+      "lastReviewedAt": "2026-05-20T04:45:28.188Z"
+    },
+    "day21:expansion": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-02T08:41:04.854Z",
+      "lastReviewedAt": "2026-05-27T08:41:04.854Z"
+    },
+    "day16:refuse": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.46,
+      "due": "2026-06-30T07:20:33.085Z",
+      "lastReviewedAt": "2026-06-24T07:20:33.085Z"
+    },
+    "day2:compensation": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-05-28T02:20:20.632Z",
+      "lastReviewedAt": "2026-05-22T02:20:20.632Z"
+    },
+    "day20:reimburse": {
+      "reps": 2,
+      "lapses": 1,
+      "intervalDays": 6,
+      "ease": 1.76,
+      "due": "2026-06-02T05:40:48.254Z",
+      "lastReviewedAt": "2026-05-27T05:40:48.254Z"
+    },
+    "day6:antique": {
+      "reps": 3,
+      "lapses": 0,
+      "intervalDays": 16,
+      "ease": 2.8,
+      "due": "2026-07-08T00:21:31.989Z",
+      "lastReviewedAt": "2026-06-22T00:21:31.989Z"
+    },
+    "day25:reserved": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-20T03:01:31.646Z",
+      "lastReviewedAt": "2026-05-19T03:01:31.646Z"
+    },
+    "day20:preferred": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-20T03:01:40.942Z",
+      "lastReviewedAt": "2026-05-19T03:01:40.942Z"
+    },
+    "day14:diverse": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.46,
+      "due": "2026-06-30T03:40:44.454Z",
+      "lastReviewedAt": "2026-06-24T03:40:44.454Z"
+    },
+    "day19:summarize": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-20T03:01:52.482Z",
+      "lastReviewedAt": "2026-05-19T03:01:52.482Z"
+    },
+    "day13:applaud": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.22,
+      "due": "2026-06-02T01:09:13.330Z",
+      "lastReviewedAt": "2026-05-27T01:09:13.330Z"
+    },
+    "day19:share": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-20T06:00:13.997Z",
+      "lastReviewedAt": "2026-05-19T06:00:13.997Z"
+    },
+    "day13:evaluation": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-05-27T06:20:17.140Z",
+      "lastReviewedAt": "2026-05-21T06:20:17.140Z"
+    },
+    "day9:implication": {
+      "reps": 0,
+      "lapses": 3,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-23T03:00:31.623Z",
+      "lastReviewedAt": "2026-06-22T03:00:31.623Z"
+    },
+    "day17:ensure": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-20T06:02:20.616Z",
+      "lastReviewedAt": "2026-05-19T06:02:20.616Z"
+    },
+    "day30:duration": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.46,
+      "due": "2026-06-03T02:07:15.393Z",
+      "lastReviewedAt": "2026-05-28T02:07:15.393Z"
+    },
+    "day5:accessible": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-05-27T07:20:18.003Z",
+      "lastReviewedAt": "2026-05-21T07:20:18.003Z"
+    },
+    "day25:reverse": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-20T07:00:34.236Z",
+      "lastReviewedAt": "2026-05-19T07:00:34.236Z"
+    },
+    "day5:expertise": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.22,
+      "due": "2026-06-04T04:45:48.608Z",
+      "lastReviewedAt": "2026-05-29T04:45:48.608Z"
+    },
+    "day14:board": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-20T07:01:07.653Z",
+      "lastReviewedAt": "2026-05-19T07:01:07.653Z"
+    },
+    "day5:aware": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-27T06:40:29.208Z",
+      "lastReviewedAt": "2026-05-26T06:40:29.208Z"
+    },
+    "day15:dispute": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-20T08:00:44.339Z",
+      "lastReviewedAt": "2026-05-19T08:00:44.339Z"
+    },
+    "day30:reaction": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-20T08:00:59.901Z",
+      "lastReviewedAt": "2026-05-19T08:00:59.901Z"
+    },
+    "day29:discharge": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-29T00:20:36.928Z",
+      "lastReviewedAt": "2026-05-28T00:20:36.928Z"
+    },
+    "day3:entire": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-20T08:01:23.059Z",
+      "lastReviewedAt": "2026-05-19T08:01:23.059Z"
+    },
+    "day15:bid": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-20T23:49:18.420Z",
+      "lastReviewedAt": "2026-05-19T23:49:18.420Z"
+    },
+    "day15:compromise": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-23T00:40:24.126Z",
+      "lastReviewedAt": "2026-05-22T00:40:24.126Z"
+    },
+    "day28:arrange": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-20T23:49:49.044Z",
+      "lastReviewedAt": "2026-05-19T23:49:49.044Z"
+    },
+    "day8:creative": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-20T23:49:58.185Z",
+      "lastReviewedAt": "2026-05-19T23:49:58.185Z"
+    },
+    "day28:utility": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-20T23:50:18.312Z",
+      "lastReviewedAt": "2026-05-19T23:50:18.312Z"
+    },
+    "day14:tour": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.46,
+      "due": "2026-06-28T05:40:23.997Z",
+      "lastReviewedAt": "2026-06-22T05:40:23.997Z"
+    },
+    "day4:agree": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T00:20:15.913Z",
+      "lastReviewedAt": "2026-05-20T00:20:15.913Z"
+    },
+    "day21:premier": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.96,
+      "due": "2026-05-21T00:20:34.673Z",
+      "lastReviewedAt": "2026-05-20T00:20:34.673Z"
+    },
+    "day24:appreciation": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T00:20:43.426Z",
+      "lastReviewedAt": "2026-05-20T00:20:43.426Z"
+    },
+    "day17:separate": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.22,
+      "due": "2026-07-01T03:21:24.731Z",
+      "lastReviewedAt": "2026-06-25T03:21:24.731Z"
+    },
+    "day27:distributuion": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.18,
+      "due": "2026-05-21T00:40:09.754Z",
+      "lastReviewedAt": "2026-05-20T00:40:09.754Z"
+    },
+    "day28:numerous": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-30T05:29:32.267Z",
+      "lastReviewedAt": "2026-06-24T05:29:32.267Z"
+    },
+    "day3:demanding": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-21T00:40:22.311Z",
+      "lastReviewedAt": "2026-05-20T00:40:22.311Z"
+    },
+    "day16:short": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.18,
+      "due": "2026-05-21T00:40:29.273Z",
+      "lastReviewedAt": "2026-05-20T00:40:29.273Z"
+    },
+    "day5:advisable": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-29T01:41:14.554Z",
+      "lastReviewedAt": "2026-05-28T01:41:14.554Z"
+    },
+    "day9:remain": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.27,
+      "due": "2026-05-21T01:00:15.600Z",
+      "lastReviewedAt": "2026-05-20T01:00:15.600Z"
+    },
+    "day10:experienced": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.5,
+      "due": "2026-05-21T01:00:24.503Z",
+      "lastReviewedAt": "2026-05-20T01:00:24.503Z"
+    },
+    "day12:decision": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.8,
+      "due": "2026-05-28T02:00:11.068Z",
+      "lastReviewedAt": "2026-05-27T02:00:11.068Z"
+    },
+    "day23:commence": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-29T00:40:23.117Z",
+      "lastReviewedAt": "2026-05-28T00:40:23.117Z"
+    },
+    "day5:promptly": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T01:01:15.941Z",
+      "lastReviewedAt": "2026-05-20T01:01:15.941Z"
+    },
+    "day5:department": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-21T01:20:41.534Z",
+      "lastReviewedAt": "2026-05-20T01:20:41.534Z"
+    },
+    "day20:recently": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T01:20:45.938Z",
+      "lastReviewedAt": "2026-05-20T01:20:45.938Z"
+    },
+    "day11:complicate": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T01:20:50.342Z",
+      "lastReviewedAt": "2026-05-20T01:20:50.342Z"
+    },
+    "day25:tow": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T01:20:54.692Z",
+      "lastReviewedAt": "2026-05-20T01:20:54.692Z"
+    },
+    "day25:congestion": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.5,
+      "due": "2026-05-21T01:21:01.723Z",
+      "lastReviewedAt": "2026-05-20T01:21:01.723Z"
+    },
+    "day22:brief": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.18,
+      "due": "2026-05-21T01:40:08.031Z",
+      "lastReviewedAt": "2026-05-20T01:40:08.031Z"
+    },
+    "day30:susceptible": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T01:40:17.337Z",
+      "lastReviewedAt": "2026-05-20T01:40:17.337Z"
+    },
+    "day8:instantly": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T01:40:24.387Z",
+      "lastReviewedAt": "2026-05-20T01:40:24.387Z"
+    },
+    "day24:nomination": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.56,
+      "due": "2026-06-24T03:20:46.563Z",
+      "lastReviewedAt": "2026-06-23T03:20:46.563Z"
+    },
+    "day10:expert": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T01:40:37.817Z",
+      "lastReviewedAt": "2026-05-20T01:40:37.817Z"
+    },
+    "day14:exotic": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.8,
+      "due": "2026-06-25T03:25:43.395Z",
+      "lastReviewedAt": "2026-06-24T03:25:43.395Z"
+    },
+    "day11:sufficiently": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T02:00:09.404Z",
+      "lastReviewedAt": "2026-05-20T02:00:09.404Z"
+    },
+    "day28:residence": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T02:00:13.872Z",
+      "lastReviewedAt": "2026-05-20T02:00:13.872Z"
+    },
+    "day22:give": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T02:00:19.781Z",
+      "lastReviewedAt": "2026-05-20T02:00:19.781Z"
+    },
+    "day26:interest": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.56,
+      "due": "2026-05-29T07:21:50.159Z",
+      "lastReviewedAt": "2026-05-28T07:21:50.159Z"
+    },
+    "day5:replacement": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T02:20:17.226Z",
+      "lastReviewedAt": "2026-05-20T02:20:17.226Z"
+    },
+    "day2:severely": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T02:20:45.450Z",
+      "lastReviewedAt": "2026-05-20T02:20:45.450Z"
+    },
+    "day29:inaccessible": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.46,
+      "due": "2026-05-27T08:00:31.781Z",
+      "lastReviewedAt": "2026-05-21T08:00:31.781Z"
+    },
+    "day16:dealer": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T02:21:08.232Z",
+      "lastReviewedAt": "2026-05-20T02:21:08.232Z"
+    },
+    "day24:retire": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-05-28T07:20:32.456Z",
+      "lastReviewedAt": "2026-05-22T07:20:32.456Z"
+    },
+    "day3:perform": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-07-01T03:03:30.468Z",
+      "lastReviewedAt": "2026-06-25T03:03:30.468Z"
+    },
+    "day23:regard": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T02:40:18.077Z",
+      "lastReviewedAt": "2026-05-20T02:40:18.077Z"
+    },
+    "day5:apparently": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-30T04:46:00.064Z",
+      "lastReviewedAt": "2026-05-29T04:46:00.064Z"
+    },
+    "day10:fabric": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T02:40:28.169Z",
+      "lastReviewedAt": "2026-05-20T02:40:28.169Z"
+    },
+    "day7:impact": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T03:02:25.424Z",
+      "lastReviewedAt": "2026-05-20T03:02:25.424Z"
+    },
+    "day7:cooperate": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-21T03:02:31.923Z",
+      "lastReviewedAt": "2026-05-20T03:02:31.923Z"
+    },
+    "day30:symtom": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T03:02:40.191Z",
+      "lastReviewedAt": "2026-05-20T03:02:40.191Z"
+    },
+    "day15:imperative": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T03:02:45.193Z",
+      "lastReviewedAt": "2026-05-20T03:02:45.193Z"
+    },
+    "day3:deadline": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T03:02:54.252Z",
+      "lastReviewedAt": "2026-05-20T03:02:54.252Z"
+    },
+    "day27:portfolio": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-29T00:40:11.010Z",
+      "lastReviewedAt": "2026-06-23T00:40:11.010Z"
+    },
+    "day18:cancel": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T03:20:17.315Z",
+      "lastReviewedAt": "2026-05-20T03:20:17.315Z"
+    },
+    "day27:reliability": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.22,
+      "due": "2026-06-28T06:20:26.789Z",
+      "lastReviewedAt": "2026-06-22T06:20:26.789Z"
+    },
+    "day5:clarify": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-21T03:20:33.265Z",
+      "lastReviewedAt": "2026-05-20T03:20:33.265Z"
+    },
+    "day13:disclose": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-23T03:43:52.827Z",
+      "lastReviewedAt": "2026-05-22T03:43:52.827Z"
+    },
+    "day6:specifically": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-21T03:40:16.961Z",
+      "lastReviewedAt": "2026-05-20T03:40:16.961Z"
+    },
+    "day12:properly": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T03:40:28.013Z",
+      "lastReviewedAt": "2026-05-20T03:40:28.013Z"
+    },
+    "day14:missing": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-25T03:00:06.381Z",
+      "lastReviewedAt": "2026-06-24T03:00:06.381Z"
+    },
+    "day8:analyze": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T03:40:47.173Z",
+      "lastReviewedAt": "2026-05-20T03:40:47.173Z"
+    },
+    "day2:arrangement": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-27T06:40:36.804Z",
+      "lastReviewedAt": "2026-05-26T06:40:36.804Z"
+    },
+    "day1:highly": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T04:45:09.106Z",
+      "lastReviewedAt": "2026-05-20T04:45:09.106Z"
+    },
+    "day7:seasonal": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-21T04:45:15.033Z",
+      "lastReviewedAt": "2026-05-20T04:45:15.033Z"
+    },
+    "day2:exception": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.46,
+      "due": "2026-06-29T02:20:22.288Z",
+      "lastReviewedAt": "2026-06-23T02:20:22.288Z"
+    },
+    "day26:loan": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T04:45:36.076Z",
+      "lastReviewedAt": "2026-05-20T04:45:36.076Z"
+    },
+    "day11:corrosion": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.56,
+      "due": "2026-05-22T23:45:39.606Z",
+      "lastReviewedAt": "2026-05-21T23:45:39.606Z"
+    },
+    "day12:precaution": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.18,
+      "due": "2026-05-21T05:20:16.425Z",
+      "lastReviewedAt": "2026-05-20T05:20:16.425Z"
+    },
+    "day19:increase": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T05:20:20.291Z",
+      "lastReviewedAt": "2026-05-20T05:20:20.291Z"
+    },
+    "day8:aim": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T05:20:24.364Z",
+      "lastReviewedAt": "2026-05-20T05:20:24.364Z"
+    },
+    "day12:coming": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.8,
+      "due": "2026-05-28T04:45:06.732Z",
+      "lastReviewedAt": "2026-05-27T04:45:06.732Z"
+    },
+    "day6:manuscript": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-24T03:20:51.792Z",
+      "lastReviewedAt": "2026-06-23T03:20:51.792Z"
+    },
+    "day1:condition": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.56,
+      "due": "2026-05-30T01:40:21.301Z",
+      "lastReviewedAt": "2026-05-29T01:40:21.301Z"
+    },
+    "day6:commit": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-22T06:20:09.954Z",
+      "lastReviewedAt": "2026-05-21T06:20:09.954Z"
+    },
+    "day23:schedule": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T05:41:19.934Z",
+      "lastReviewedAt": "2026-05-20T05:41:19.934Z"
+    },
+    "day29:waste": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T05:41:30.639Z",
+      "lastReviewedAt": "2026-05-20T05:41:30.639Z"
+    },
+    "day24:early": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.82,
+      "due": "2026-06-24T06:20:06.948Z",
+      "lastReviewedAt": "2026-06-23T06:20:06.948Z"
+    },
+    "day16:finalize": {
+      "reps": 3,
+      "lapses": 0,
+      "intervalDays": 13,
+      "ease": 2.32,
+      "due": "2026-06-11T07:22:21.522Z",
+      "lastReviewedAt": "2026-05-29T07:22:21.522Z"
+    },
+    "day12:expiration": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T06:01:11.086Z",
+      "lastReviewedAt": "2026-05-20T06:01:11.086Z"
+    },
+    "day12:component": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T06:01:16.952Z",
+      "lastReviewedAt": "2026-05-20T06:01:16.952Z"
+    },
+    "day8:forward": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T06:01:26.593Z",
+      "lastReviewedAt": "2026-05-20T06:01:26.593Z"
+    },
+    "day14:involve": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-03T00:20:42.301Z",
+      "lastReviewedAt": "2026-05-28T00:20:42.301Z"
+    },
+    "day22:narrowly": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.8,
+      "due": "2026-06-23T06:40:20.032Z",
+      "lastReviewedAt": "2026-06-22T06:40:20.032Z"
+    },
+    "day7:reserve": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-21T06:27:33.374Z",
+      "lastReviewedAt": "2026-05-20T06:27:33.374Z"
+    },
+    "day25:official": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T06:27:37.412Z",
+      "lastReviewedAt": "2026-05-20T06:27:37.412Z"
+    },
+    "day7:demand": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-30T05:40:18.541Z",
+      "lastReviewedAt": "2026-06-24T05:40:18.541Z"
+    },
+    "day18:amenity": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-24T02:20:11.047Z",
+      "lastReviewedAt": "2026-06-23T02:20:11.047Z"
+    },
+    "day6:beneficial": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.22,
+      "due": "2026-06-29T02:40:52.612Z",
+      "lastReviewedAt": "2026-06-23T02:40:52.612Z"
+    },
+    "day24:award": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-21T06:40:56.781Z",
+      "lastReviewedAt": "2026-05-20T06:40:56.781Z"
+    },
+    "day28:finally": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T06:41:04.577Z",
+      "lastReviewedAt": "2026-05-20T06:41:04.577Z"
+    },
+    "day11:following": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.8,
+      "due": "2026-06-26T01:40:36.685Z",
+      "lastReviewedAt": "2026-06-25T01:40:36.685Z"
+    },
+    "day20:substantially": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T07:01:31.819Z",
+      "lastReviewedAt": "2026-05-20T07:01:31.819Z"
+    },
+    "day12:comparable": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.8,
+      "due": "2026-06-25T03:00:06.005Z",
+      "lastReviewedAt": "2026-06-24T03:00:06.005Z"
+    },
+    "day21:uncertain": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T07:01:44.420Z",
+      "lastReviewedAt": "2026-05-20T07:01:44.420Z"
+    },
+    "day11:inquiry": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T07:01:55.332Z",
+      "lastReviewedAt": "2026-05-20T07:01:55.332Z"
+    },
+    "day9:director": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-28T04:45:15.435Z",
+      "lastReviewedAt": "2026-05-27T04:45:15.435Z"
+    },
+    "day22:determine": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-28T06:40:24.255Z",
+      "lastReviewedAt": "2026-06-22T06:40:24.255Z"
+    },
+    "day13:interact": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.28,
+      "due": "2026-06-24T06:20:24.419Z",
+      "lastReviewedAt": "2026-06-23T06:20:24.419Z"
+    },
+    "day18:belongings": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T07:20:35.969Z",
+      "lastReviewedAt": "2026-05-20T07:20:35.969Z"
+    },
+    "day14:outgoing": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.38,
+      "due": "2026-06-24T03:20:18.143Z",
+      "lastReviewedAt": "2026-06-23T03:20:18.143Z"
+    },
+    "day28:repair": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T07:40:13.314Z",
+      "lastReviewedAt": "2026-05-20T07:40:13.314Z"
+    },
+    "day1:achievement": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-03T02:40:11.771Z",
+      "lastReviewedAt": "2026-05-28T02:40:11.771Z"
+    },
+    "day13:insert": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-07-01T05:40:26.561Z",
+      "lastReviewedAt": "2026-06-25T05:40:26.561Z"
+    },
+    "day20:turnover": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T07:40:30.998Z",
+      "lastReviewedAt": "2026-05-20T07:40:30.998Z"
+    },
+    "day25:trust": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-03T01:41:18.835Z",
+      "lastReviewedAt": "2026-05-28T01:41:18.835Z"
+    },
+    "day2:standard": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-02T06:42:40.551Z",
+      "lastReviewedAt": "2026-05-27T06:42:40.551Z"
+    },
+    "day26:summary": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T08:00:09.251Z",
+      "lastReviewedAt": "2026-05-20T08:00:09.251Z"
+    },
+    "day26:personal": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.6,
+      "due": "2026-06-29T02:01:11.611Z",
+      "lastReviewedAt": "2026-06-23T02:01:11.611Z"
+    },
+    "day1:training": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T08:00:15.669Z",
+      "lastReviewedAt": "2026-05-20T08:00:15.669Z"
+    },
+    "day25:prominently": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T08:00:36.240Z",
+      "lastReviewedAt": "2026-05-20T08:00:36.240Z"
+    },
+    "day20:interrupt": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-04T00:40:12.456Z",
+      "lastReviewedAt": "2026-05-29T00:40:12.456Z"
+    },
+    "day23:encourage": {
+      "reps": 3,
+      "lapses": 0,
+      "intervalDays": 16,
+      "ease": 2.8,
+      "due": "2026-07-09T00:40:27.536Z",
+      "lastReviewedAt": "2026-06-23T00:40:27.536Z"
+    },
+    "day26:unexpected": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-02T03:20:14.206Z",
+      "lastReviewedAt": "2026-05-27T03:20:14.206Z"
+    },
+    "day5:overview": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T08:26:54.262Z",
+      "lastReviewedAt": "2026-05-20T08:26:54.262Z"
+    },
+    "day5:speak": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.28,
+      "due": "2026-06-23T08:01:26.110Z",
+      "lastReviewedAt": "2026-06-22T08:01:26.110Z"
+    },
+    "day25:closure": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T08:40:11.998Z",
+      "lastReviewedAt": "2026-05-20T08:40:11.998Z"
+    },
+    "day15:signature": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T08:40:16.531Z",
+      "lastReviewedAt": "2026-05-20T08:40:16.531Z"
+    },
+    "day3:directly": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.56,
+      "due": "2026-06-23T05:40:12.779Z",
+      "lastReviewedAt": "2026-06-22T05:40:12.779Z"
+    },
+    "day22:crowded": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-21T08:40:25.361Z",
+      "lastReviewedAt": "2026-05-20T08:40:25.361Z"
+    },
+    "day25:average": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-21T08:40:28.582Z",
+      "lastReviewedAt": "2026-05-20T08:40:28.582Z"
+    },
+    "day3:corporatiion": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-22T05:16:49.069Z",
+      "lastReviewedAt": "2026-05-21T05:16:49.069Z"
+    },
+    "day28:consist": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.5,
+      "due": "2026-05-22T05:38:38.660Z",
+      "lastReviewedAt": "2026-05-21T05:38:38.660Z"
+    },
+    "day27:secure": {
+      "reps": 3,
+      "lapses": 0,
+      "intervalDays": 13,
+      "ease": 2.32,
+      "due": "2026-07-07T05:40:55.231Z",
+      "lastReviewedAt": "2026-06-24T05:40:55.231Z"
+    },
+    "day6:banquet": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-22T05:38:54.339Z",
+      "lastReviewedAt": "2026-05-21T05:38:54.339Z"
+    },
+    "day5:realistically": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.66,
+      "due": "2026-05-30T07:22:13.978Z",
+      "lastReviewedAt": "2026-05-29T07:22:13.978Z"
+    },
+    "day26:study": {
+      "reps": 3,
+      "lapses": 0,
+      "intervalDays": 15,
+      "ease": 2.46,
+      "due": "2026-07-08T01:40:15.560Z",
+      "lastReviewedAt": "2026-06-23T01:40:15.560Z"
+    },
+    "day19:slightly": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-27T03:40:25.591Z",
+      "lastReviewedAt": "2026-05-26T03:40:25.591Z"
+    },
+    "day11:update": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-22T05:40:33.800Z",
+      "lastReviewedAt": "2026-05-21T05:40:33.800Z"
+    },
+    "day14:unavailable": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.46,
+      "due": "2026-06-02T02:40:21.434Z",
+      "lastReviewedAt": "2026-05-27T02:40:21.434Z"
+    },
+    "day23:require": {
+      "reps": 3,
+      "lapses": 0,
+      "intervalDays": 16,
+      "ease": 2.56,
+      "due": "2026-07-10T08:24:06.179Z",
+      "lastReviewedAt": "2026-06-24T08:24:06.179Z"
+    },
+    "day19:markedly": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-22T06:03:03.047Z",
+      "lastReviewedAt": "2026-05-21T06:03:03.047Z"
+    },
+    "day28:actually": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-22T06:03:11.416Z",
+      "lastReviewedAt": "2026-05-21T06:03:11.416Z"
+    },
+    "day12:damaged": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-22T06:03:17.721Z",
+      "lastReviewedAt": "2026-05-21T06:03:17.721Z"
+    },
+    "day26:relation": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-22T06:03:25.445Z",
+      "lastReviewedAt": "2026-05-21T06:03:25.445Z"
+    },
+    "day26:previously": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.46,
+      "due": "2026-06-02T03:20:09.407Z",
+      "lastReviewedAt": "2026-05-27T03:20:09.407Z"
+    },
+    "day29:organization": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-22T06:20:20.718Z",
+      "lastReviewedAt": "2026-05-21T06:20:20.718Z"
+    },
+    "day2:thoroughly": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-22T06:20:25.334Z",
+      "lastReviewedAt": "2026-05-21T06:20:25.334Z"
+    },
+    "day30:fatigue": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-22T06:40:16.084Z",
+      "lastReviewedAt": "2026-05-21T06:40:16.084Z"
+    },
+    "day11:envision": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-22T06:40:21.805Z",
+      "lastReviewedAt": "2026-05-21T06:40:21.805Z"
+    },
+    "day4:accountable": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-22T06:40:27.160Z",
+      "lastReviewedAt": "2026-05-21T06:40:27.160Z"
+    },
+    "day25:transportation": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-22T06:40:31.046Z",
+      "lastReviewedAt": "2026-05-21T06:40:31.046Z"
+    },
+    "day7:probable": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-22T06:40:35.161Z",
+      "lastReviewedAt": "2026-05-21T06:40:35.161Z"
+    },
+    "day30:diagnosis": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-22T07:00:09.155Z",
+      "lastReviewedAt": "2026-05-21T07:00:09.155Z"
+    },
+    "day9:dwindle": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-22T07:00:19.761Z",
+      "lastReviewedAt": "2026-05-21T07:00:19.761Z"
+    },
+    "day21:asset": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-22T07:00:24.282Z",
+      "lastReviewedAt": "2026-05-21T07:00:24.282Z"
+    },
+    "day5:aspect": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-22T07:00:29.804Z",
+      "lastReviewedAt": "2026-05-21T07:00:29.804Z"
+    },
+    "day12:chemical": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-22T07:20:08.225Z",
+      "lastReviewedAt": "2026-05-21T07:20:08.225Z"
+    },
+    "day17:address": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-03T05:47:32.897Z",
+      "lastReviewedAt": "2026-05-28T05:47:32.897Z"
+    },
+    "day18:complication": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-22T07:20:23.208Z",
+      "lastReviewedAt": "2026-05-21T07:20:23.208Z"
+    },
+    "day5:compliance": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-22T07:20:35.320Z",
+      "lastReviewedAt": "2026-05-21T07:20:35.320Z"
+    },
+    "day29:disturb": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-22T07:40:08.737Z",
+      "lastReviewedAt": "2026-05-21T07:40:08.737Z"
+    },
+    "day21:contribute": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-22T07:40:15.030Z",
+      "lastReviewedAt": "2026-05-21T07:40:15.030Z"
+    },
+    "day28:district": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-22T07:40:20.501Z",
+      "lastReviewedAt": "2026-05-21T07:40:20.501Z"
+    },
+    "day2:authorize": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-22T07:40:30.620Z",
+      "lastReviewedAt": "2026-05-21T07:40:30.620Z"
+    },
+    "day22:discuss": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.36,
+      "due": "2026-06-29T02:40:48.144Z",
+      "lastReviewedAt": "2026-06-23T02:40:48.144Z"
+    },
+    "day3:involved": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.04,
+      "due": "2026-05-29T07:22:08.023Z",
+      "lastReviewedAt": "2026-05-28T07:22:08.023Z"
+    },
+    "day8:experience": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-03T00:40:17.278Z",
+      "lastReviewedAt": "2026-05-28T00:40:17.278Z"
+    },
+    "day2:mandate": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-22T08:00:42.454Z",
+      "lastReviewedAt": "2026-05-21T08:00:42.454Z"
+    },
+    "day9:boom": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-22T08:20:24.627Z",
+      "lastReviewedAt": "2026-05-21T08:20:24.627Z"
+    },
+    "day26:in common": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-22T08:22:54.682Z",
+      "lastReviewedAt": "2026-05-21T08:22:54.682Z"
+    },
+    "day25:drive": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-22T08:22:58.194Z",
+      "lastReviewedAt": "2026-05-21T08:22:58.194Z"
+    },
+    "day20:deficit": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.22,
+      "due": "2026-06-02T03:20:17.524Z",
+      "lastReviewedAt": "2026-05-27T03:20:17.524Z"
+    },
+    "day26:deposit": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-22T08:23:08.853Z",
+      "lastReviewedAt": "2026-05-21T08:23:08.853Z"
+    },
+    "day24:unanimously": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-22T08:40:17.804Z",
+      "lastReviewedAt": "2026-05-21T08:40:17.804Z"
+    },
+    "day28:restore": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-22T08:40:25.704Z",
+      "lastReviewedAt": "2026-05-21T08:40:25.704Z"
+    },
+    "day20:incidental": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-27T05:20:11.312Z",
+      "lastReviewedAt": "2026-05-26T05:20:11.312Z"
+    },
+    "day12:power": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.36,
+      "due": "2026-06-29T04:58:57.150Z",
+      "lastReviewedAt": "2026-06-23T04:58:57.150Z"
+    },
+    "day11:invest": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.56,
+      "due": "2026-06-23T08:01:16.437Z",
+      "lastReviewedAt": "2026-06-22T08:01:16.437Z"
+    },
+    "day21:surpass": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-22T23:45:43.662Z",
+      "lastReviewedAt": "2026-05-21T23:45:43.662Z"
+    },
+    "day5:feedback": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-22T23:45:47.626Z",
+      "lastReviewedAt": "2026-05-21T23:45:47.626Z"
+    },
+    "day15:direction": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-22T23:45:52.868Z",
+      "lastReviewedAt": "2026-05-21T23:45:52.868Z"
+    },
+    "day3:delegate": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-22T23:45:55.812Z",
+      "lastReviewedAt": "2026-05-21T23:45:55.812Z"
+    },
+    "day25:divert": {
+      "reps": 0,
+      "lapses": 3,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-24T23:56:54.507Z",
+      "lastReviewedAt": "2026-06-23T23:56:54.507Z"
+    },
+    "day19:significantly": {
+      "reps": 3,
+      "lapses": 0,
+      "intervalDays": 13,
+      "ease": 2.08,
+      "due": "2026-07-06T00:40:06.293Z",
+      "lastReviewedAt": "2026-06-23T00:40:06.293Z"
+    },
+    "day4:coworker": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-01T06:20:26.833Z",
+      "lastReviewedAt": "2026-05-26T06:20:26.833Z"
+    },
+    "day13:curteous": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T00:20:26.468Z",
+      "lastReviewedAt": "2026-05-22T00:20:26.468Z"
+    },
+    "day24:skilled": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-23T00:20:31.883Z",
+      "lastReviewedAt": "2026-05-22T00:20:31.883Z"
+    },
+    "day10:acceptable": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.8,
+      "due": "2026-05-28T05:21:06.017Z",
+      "lastReviewedAt": "2026-05-27T05:21:06.017Z"
+    },
+    "day1:reference": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-23T00:40:12.778Z",
+      "lastReviewedAt": "2026-05-22T00:40:12.778Z"
+    },
+    "day17:envelope": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.46,
+      "due": "2026-06-02T04:45:27.316Z",
+      "lastReviewedAt": "2026-05-27T04:45:27.316Z"
+    },
+    "day17:agency": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T00:40:21.217Z",
+      "lastReviewedAt": "2026-05-22T00:40:21.217Z"
+    },
+    "day11:inspect": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-28T01:30:04.317Z",
+      "lastReviewedAt": "2026-05-27T01:30:04.317Z"
+    },
+    "day19:anticipate": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T01:00:12.757Z",
+      "lastReviewedAt": "2026-05-22T01:00:12.757Z"
+    },
+    "day13:guarantee": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T01:00:16.587Z",
+      "lastReviewedAt": "2026-05-22T01:00:16.587Z"
+    },
+    "day23:function": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T01:00:19.597Z",
+      "lastReviewedAt": "2026-05-22T01:00:19.597Z"
+    },
+    "day11:extend": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-23T01:00:24.326Z",
+      "lastReviewedAt": "2026-05-22T01:00:24.326Z"
+    },
+    "day22:outcome": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T01:20:07.933Z",
+      "lastReviewedAt": "2026-05-22T01:20:07.933Z"
+    },
+    "day30:checkup": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-29T07:02:21.993Z",
+      "lastReviewedAt": "2026-05-28T07:02:21.993Z"
+    },
+    "day27:sponsor": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-23T01:20:21.005Z",
+      "lastReviewedAt": "2026-05-22T01:20:21.005Z"
+    },
+    "day24:radically": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T01:20:30.988Z",
+      "lastReviewedAt": "2026-05-22T01:20:30.988Z"
+    },
+    "day25:downtown": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T01:20:36.319Z",
+      "lastReviewedAt": "2026-05-22T01:20:36.319Z"
+    },
+    "day27:rapid": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-23T01:40:06.852Z",
+      "lastReviewedAt": "2026-05-22T01:40:06.852Z"
+    },
+    "day8:intensify": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T01:40:12.581Z",
+      "lastReviewedAt": "2026-05-22T01:40:12.581Z"
+    },
+    "day11:domestic": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T01:40:29.051Z",
+      "lastReviewedAt": "2026-05-22T01:40:29.051Z"
+    },
+    "day4:adjust": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.8,
+      "due": "2026-06-26T06:20:19.178Z",
+      "lastReviewedAt": "2026-06-25T06:20:19.178Z"
+    },
+    "day26:temporary": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-23T02:00:07.530Z",
+      "lastReviewedAt": "2026-05-22T02:00:07.530Z"
+    },
+    "day17:acknowledge": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T02:00:16.468Z",
+      "lastReviewedAt": "2026-05-22T02:00:16.468Z"
+    },
+    "day23:annual": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-23T02:00:20.993Z",
+      "lastReviewedAt": "2026-05-22T02:00:20.993Z"
+    },
+    "day23:attend": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-23T02:00:24.388Z",
+      "lastReviewedAt": "2026-05-22T02:00:24.388Z"
+    },
+    "day11:revolutionary": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T02:00:36.297Z",
+      "lastReviewedAt": "2026-05-22T02:00:36.297Z"
+    },
+    "day1:consultant": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T02:20:10.290Z",
+      "lastReviewedAt": "2026-05-22T02:20:10.290Z"
+    },
+    "day17:oblige": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T02:20:13.937Z",
+      "lastReviewedAt": "2026-05-22T02:20:13.937Z"
+    },
+    "day11:accomplished": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-29T02:20:11.626Z",
+      "lastReviewedAt": "2026-05-28T02:20:11.626Z"
+    },
+    "day17:recipient": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T02:20:24.519Z",
+      "lastReviewedAt": "2026-05-22T02:20:24.519Z"
+    },
+    "day11:reliable": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-23T02:40:08.765Z",
+      "lastReviewedAt": "2026-05-22T02:40:08.765Z"
+    },
+    "day21:vital": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T02:40:14.025Z",
+      "lastReviewedAt": "2026-05-22T02:40:14.025Z"
+    },
+    "day24:appoint": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-26T01:25:45.649Z",
+      "lastReviewedAt": "2026-06-25T01:25:45.649Z"
+    },
+    "day4:direct": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T02:40:23.184Z",
+      "lastReviewedAt": "2026-05-22T02:40:23.184Z"
+    },
+    "day23:include": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-23T02:40:35.722Z",
+      "lastReviewedAt": "2026-05-22T02:40:35.722Z"
+    },
+    "day20:excess": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T03:20:07.297Z",
+      "lastReviewedAt": "2026-05-22T03:20:07.297Z"
+    },
+    "day24:reorganize": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-23T03:20:15.046Z",
+      "lastReviewedAt": "2026-05-22T03:20:15.046Z"
+    },
+    "day10:mutually": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-27T07:00:24.225Z",
+      "lastReviewedAt": "2026-05-26T07:00:24.225Z"
+    },
+    "day16:rating": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-23T03:20:25.107Z",
+      "lastReviewedAt": "2026-05-22T03:20:25.107Z"
+    },
+    "day15:originally": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T03:20:29.464Z",
+      "lastReviewedAt": "2026-05-22T03:20:29.464Z"
+    },
+    "day12:limit": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-02T01:09:20.008Z",
+      "lastReviewedAt": "2026-05-27T01:09:20.008Z"
+    },
+    "day25:obtain": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T03:43:34.099Z",
+      "lastReviewedAt": "2026-05-22T03:43:34.099Z"
+    },
+    "day9:boost": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T03:43:38.983Z",
+      "lastReviewedAt": "2026-05-22T03:43:38.983Z"
+    },
+    "day18:entirely": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T03:43:46.133Z",
+      "lastReviewedAt": "2026-05-22T03:43:46.133Z"
+    },
+    "day4:intention": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T06:00:13.350Z",
+      "lastReviewedAt": "2026-05-22T06:00:13.350Z"
+    },
+    "day8:need": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T06:00:15.962Z",
+      "lastReviewedAt": "2026-05-22T06:00:15.962Z"
+    },
+    "day17:carton": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-23T06:08:12.907Z",
+      "lastReviewedAt": "2026-06-22T06:08:12.907Z"
+    },
+    "day14:ship": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.8,
+      "due": "2026-06-23T06:08:20.753Z",
+      "lastReviewedAt": "2026-06-22T06:08:20.753Z"
+    },
+    "day21:edge": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.8,
+      "due": "2026-05-28T06:26:51.064Z",
+      "lastReviewedAt": "2026-05-27T06:26:51.064Z"
+    },
+    "day30:dental": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-23T06:22:34.386Z",
+      "lastReviewedAt": "2026-05-22T06:22:34.386Z"
+    },
+    "day5:explain": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-23T06:22:40.164Z",
+      "lastReviewedAt": "2026-05-22T06:22:40.164Z"
+    },
+    "day29:ecology": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.56,
+      "due": "2026-05-29T03:20:31.494Z",
+      "lastReviewedAt": "2026-05-28T03:20:31.494Z"
+    },
+    "day3:colleague": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-23T06:22:54.794Z",
+      "lastReviewedAt": "2026-05-22T06:22:54.794Z"
+    },
+    "day3:revision": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-23T06:22:58.161Z",
+      "lastReviewedAt": "2026-05-22T06:22:58.161Z"
+    },
+    "day18:in advance": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T07:00:24.192Z",
+      "lastReviewedAt": "2026-05-22T07:00:24.192Z"
+    },
+    "day1:impressed": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-23T07:00:30.568Z",
+      "lastReviewedAt": "2026-05-22T07:00:30.568Z"
+    },
+    "day22:press": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-29T03:40:15.237Z",
+      "lastReviewedAt": "2026-06-23T03:40:15.237Z"
+    },
+    "day24:progress": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.6,
+      "due": "2026-06-02T06:26:41.138Z",
+      "lastReviewedAt": "2026-05-27T06:26:41.138Z"
+    },
+    "day6:upcoming": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-23T07:00:50.964Z",
+      "lastReviewedAt": "2026-05-22T07:00:50.964Z"
+    },
+    "day22:persuasive": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-27T05:20:21.644Z",
+      "lastReviewedAt": "2026-05-26T05:20:21.644Z"
+    },
+    "day1:employment": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-23T07:20:25.549Z",
+      "lastReviewedAt": "2026-05-22T07:20:25.549Z"
+    },
+    "day17:incorrect": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-23T07:20:29.332Z",
+      "lastReviewedAt": "2026-05-22T07:20:29.332Z"
+    },
+    "day17:particularly": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T07:20:36.465Z",
+      "lastReviewedAt": "2026-05-22T07:20:36.465Z"
+    },
+    "day20:expenditure": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-24T03:20:29.507Z",
+      "lastReviewedAt": "2026-06-23T03:20:29.507Z"
+    },
+    "day24:exceptional": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T08:20:37.410Z",
+      "lastReviewedAt": "2026-05-22T08:20:37.410Z"
+    },
+    "day30:combination": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-23T08:21:18.811Z",
+      "lastReviewedAt": "2026-05-22T08:21:18.811Z"
+    },
+    "day30:recovery": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-23T08:21:38.347Z",
+      "lastReviewedAt": "2026-05-22T08:21:38.347Z"
+    },
+    "day17:enclose": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-27T03:20:36.397Z",
+      "lastReviewedAt": "2026-05-26T03:20:36.397Z"
+    },
+    "day22:enclosed": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-27T03:20:41.180Z",
+      "lastReviewedAt": "2026-05-26T03:20:41.180Z"
+    },
+    "day23:purpose": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.8,
+      "due": "2026-05-29T08:00:48.445Z",
+      "lastReviewedAt": "2026-05-28T08:00:48.445Z"
+    },
+    "day27:increasing": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.22,
+      "due": "2026-06-03T06:40:18.713Z",
+      "lastReviewedAt": "2026-05-28T06:40:18.713Z"
+    },
+    "day18:available": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.46,
+      "due": "2026-06-04T00:40:54.921Z",
+      "lastReviewedAt": "2026-05-29T00:40:54.921Z"
+    },
+    "day25:fine": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-27T03:40:16.788Z",
+      "lastReviewedAt": "2026-05-26T03:40:16.788Z"
+    },
+    "day3:convey": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-27T03:40:21.556Z",
+      "lastReviewedAt": "2026-05-26T03:40:21.556Z"
+    },
+    "day2:access": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-03T08:00:56.217Z",
+      "lastReviewedAt": "2026-05-28T08:00:56.217Z"
+    },
+    "day17:step": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-27T03:40:34.271Z",
+      "lastReviewedAt": "2026-05-26T03:40:34.271Z"
+    },
+    "day6:exhibition": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-27T05:20:07.803Z",
+      "lastReviewedAt": "2026-05-26T05:20:07.803Z"
+    },
+    "day1:requirement": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.28,
+      "due": "2026-06-24T05:46:12.154Z",
+      "lastReviewedAt": "2026-06-23T05:46:12.154Z"
+    },
+    "day3:reluctantly": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-27T06:20:14.233Z",
+      "lastReviewedAt": "2026-05-26T06:20:14.233Z"
+    },
+    "day4:assume": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-27T06:20:20.707Z",
+      "lastReviewedAt": "2026-05-26T06:20:20.707Z"
+    },
+    "day30:coverage": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-27T06:20:33.747Z",
+      "lastReviewedAt": "2026-05-26T06:20:33.747Z"
+    },
+    "day26:transaction": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-27T06:20:38.429Z",
+      "lastReviewedAt": "2026-05-26T06:20:38.429Z"
+    },
+    "day20:liable": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-27T06:40:07.913Z",
+      "lastReviewedAt": "2026-05-26T06:40:07.913Z"
+    },
+    "day30:cleanliness": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-27T06:40:24.987Z",
+      "lastReviewedAt": "2026-05-26T06:40:24.987Z"
+    },
+    "day20:allocate": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-22T23:48:23.058Z",
+      "lastReviewedAt": "2026-06-21T23:48:23.058Z"
+    },
+    "day23:reimbursement": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-27T07:00:09.657Z",
+      "lastReviewedAt": "2026-05-26T07:00:09.657Z"
+    },
+    "day2:effect": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-27T07:00:14.193Z",
+      "lastReviewedAt": "2026-05-26T07:00:14.193Z"
+    },
+    "day18:retain": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-27T07:00:17.454Z",
+      "lastReviewedAt": "2026-05-26T07:00:17.454Z"
+    },
+    "day27:solely": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-27T07:00:28.760Z",
+      "lastReviewedAt": "2026-05-26T07:00:28.760Z"
+    },
+    "day20:spend": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-03T01:20:27.534Z",
+      "lastReviewedAt": "2026-05-28T01:20:27.534Z"
+    },
+    "day28:delay": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-27T07:20:09.294Z",
+      "lastReviewedAt": "2026-05-26T07:20:09.294Z"
+    },
+    "day25:intersection": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.56,
+      "due": "2026-06-26T06:20:12.775Z",
+      "lastReviewedAt": "2026-06-25T06:20:12.775Z"
+    },
+    "day19:improvement": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-27T07:20:18.440Z",
+      "lastReviewedAt": "2026-05-26T07:20:18.440Z"
+    },
+    "day5:timely": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-27T07:20:30.564Z",
+      "lastReviewedAt": "2026-05-26T07:20:30.564Z"
+    },
+    "day11:hold": {
+      "reps": 0,
+      "lapses": 3,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-23T03:00:39.968Z",
+      "lastReviewedAt": "2026-06-22T03:00:39.968Z"
+    },
+    "day27:consider": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-27T08:00:16.350Z",
+      "lastReviewedAt": "2026-05-26T08:00:16.350Z"
+    },
+    "day26:overdue": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-27T08:00:28.290Z",
+      "lastReviewedAt": "2026-05-26T08:00:28.290Z"
+    },
+    "day14:indulge": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-27T08:00:34.208Z",
+      "lastReviewedAt": "2026-05-26T08:00:34.208Z"
+    },
+    "day29:pollutant": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-27T08:00:45.800Z",
+      "lastReviewedAt": "2026-05-26T08:00:45.800Z"
+    },
+    "day21:acquire": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.46,
+      "due": "2026-07-01T01:25:17.099Z",
+      "lastReviewedAt": "2026-06-25T01:25:17.099Z"
+    },
+    "day15:dedicate": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.8,
+      "due": "2026-06-25T08:23:51.593Z",
+      "lastReviewedAt": "2026-06-24T08:23:51.593Z"
+    },
+    "day26:reject": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T00:01:09.915Z",
+      "lastReviewedAt": "2026-05-27T00:01:09.915Z"
+    },
+    "day18:cater": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-29T07:21:56.118Z",
+      "lastReviewedAt": "2026-05-28T07:21:56.118Z"
+    },
+    "day3:supervision": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T00:01:25.329Z",
+      "lastReviewedAt": "2026-05-27T00:01:25.329Z"
+    },
+    "day11:appearance": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-23T08:40:07.545Z",
+      "lastReviewedAt": "2026-06-22T08:40:07.545Z"
+    },
+    "day8:advantage": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.46,
+      "due": "2026-06-03T08:42:25.173Z",
+      "lastReviewedAt": "2026-05-28T08:42:25.173Z"
+    },
+    "day1:excellent": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T00:40:20.888Z",
+      "lastReviewedAt": "2026-05-27T00:40:20.888Z"
+    },
+    "day19:exceed": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-28T00:40:39.404Z",
+      "lastReviewedAt": "2026-05-27T00:40:39.404Z"
+    },
+    "day24:appraisal": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T01:09:17.126Z",
+      "lastReviewedAt": "2026-05-27T01:09:17.126Z"
+    },
+    "day10:officially": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T01:09:25.713Z",
+      "lastReviewedAt": "2026-05-27T01:09:25.713Z"
+    },
+    "day15:collaborate": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-28T01:09:33.030Z",
+      "lastReviewedAt": "2026-05-27T01:09:33.030Z"
+    },
+    "day16:subject": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T01:29:46.124Z",
+      "lastReviewedAt": "2026-05-27T01:29:46.124Z"
+    },
+    "day30:related": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T01:29:50.227Z",
+      "lastReviewedAt": "2026-05-27T01:29:50.227Z"
+    },
+    "day19:inaccurate": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T01:29:57.515Z",
+      "lastReviewedAt": "2026-05-27T01:29:57.515Z"
+    },
+    "day1:managerial": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-23T08:01:39.636Z",
+      "lastReviewedAt": "2026-06-22T08:01:39.636Z"
+    },
+    "day19:incur": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-23T08:20:40.340Z",
+      "lastReviewedAt": "2026-06-22T08:20:40.340Z"
+    },
+    "day15:foundation": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-04T05:41:21.683Z",
+      "lastReviewedAt": "2026-05-29T05:41:21.683Z"
+    },
+    "day9:industry": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T01:40:17.761Z",
+      "lastReviewedAt": "2026-05-27T01:40:17.761Z"
+    },
+    "day9:potential": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-28T01:40:24.335Z",
+      "lastReviewedAt": "2026-05-27T01:40:24.335Z"
+    },
+    "day1:proficiency": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T01:40:29.136Z",
+      "lastReviewedAt": "2026-05-27T01:40:29.136Z"
+    },
+    "day15:define": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.8,
+      "due": "2026-05-29T05:48:04.150Z",
+      "lastReviewedAt": "2026-05-28T05:48:04.150Z"
+    },
+    "day19:growth": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T02:00:13.826Z",
+      "lastReviewedAt": "2026-05-27T02:00:13.826Z"
+    },
+    "day23:host": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T02:00:18.709Z",
+      "lastReviewedAt": "2026-05-27T02:00:18.709Z"
+    },
+    "day18:sip": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T02:00:29.673Z",
+      "lastReviewedAt": "2026-05-27T02:00:29.673Z"
+    },
+    "day28:abandon": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-30T05:29:24.661Z",
+      "lastReviewedAt": "2026-06-24T05:29:24.661Z"
+    },
+    "day7:demonstration": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T02:26:39.596Z",
+      "lastReviewedAt": "2026-05-27T02:26:39.596Z"
+    },
+    "day3:monitor": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T02:26:43.696Z",
+      "lastReviewedAt": "2026-05-27T02:26:43.696Z"
+    },
+    "day6:contributor": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T02:26:47.784Z",
+      "lastReviewedAt": "2026-05-27T02:26:47.784Z"
+    },
+    "day12:maneuver": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T02:26:50.507Z",
+      "lastReviewedAt": "2026-05-27T02:26:50.507Z"
+    },
+    "day13:inquire": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T02:40:06.534Z",
+      "lastReviewedAt": "2026-05-27T02:40:06.534Z"
+    },
+    "day9:evidence": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T02:40:09.177Z",
+      "lastReviewedAt": "2026-05-27T02:40:09.177Z"
+    },
+    "day25:clearly": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T02:40:12.707Z",
+      "lastReviewedAt": "2026-05-27T02:40:12.707Z"
+    },
+    "day9:economical": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T02:40:16.994Z",
+      "lastReviewedAt": "2026-05-27T02:40:16.994Z"
+    },
+    "day29:consistent": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T03:00:09.055Z",
+      "lastReviewedAt": "2026-05-27T03:00:09.055Z"
+    },
+    "day17:adequately": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-28T03:00:14.044Z",
+      "lastReviewedAt": "2026-05-27T03:00:14.044Z"
+    },
+    "day22:adjourn": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T03:00:18.432Z",
+      "lastReviewedAt": "2026-05-27T03:00:18.432Z"
+    },
+    "day14:emergency": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T03:00:23.907Z",
+      "lastReviewedAt": "2026-05-27T03:00:23.907Z"
+    },
+    "day16:satisfactory": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-28T03:00:29.366Z",
+      "lastReviewedAt": "2026-05-27T03:00:29.366Z"
+    },
+    "day24:evaluate": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T03:20:05.290Z",
+      "lastReviewedAt": "2026-05-27T03:20:05.290Z"
+    },
+    "day4:manner": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T03:20:23.290Z",
+      "lastReviewedAt": "2026-05-27T03:20:23.290Z"
+    },
+    "day10:exactly": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T03:40:24.289Z",
+      "lastReviewedAt": "2026-05-27T03:40:24.289Z"
+    },
+    "day3:workshop": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T03:40:33.031Z",
+      "lastReviewedAt": "2026-05-27T03:40:33.031Z"
+    },
+    "day26:successfully": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T03:40:38.226Z",
+      "lastReviewedAt": "2026-05-27T03:40:38.226Z"
+    },
+    "day24:independence": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-28T03:40:42.123Z",
+      "lastReviewedAt": "2026-05-27T03:40:42.123Z"
+    },
+    "day7:analysis": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T04:45:09.836Z",
+      "lastReviewedAt": "2026-05-27T04:45:09.836Z"
+    },
+    "day30:examination": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T04:45:21.434Z",
+      "lastReviewedAt": "2026-05-27T04:45:21.434Z"
+    },
+    "day13:politely": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T05:20:55.289Z",
+      "lastReviewedAt": "2026-05-27T05:20:55.289Z"
+    },
+    "day9:prosperity": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T05:20:58.305Z",
+      "lastReviewedAt": "2026-05-27T05:20:58.305Z"
+    },
+    "day3:check": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.5,
+      "due": "2026-05-28T05:21:01.890Z",
+      "lastReviewedAt": "2026-05-27T05:21:01.890Z"
+    },
+    "day22:defer": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-26T03:03:25.718Z",
+      "lastReviewedAt": "2026-06-25T03:03:25.718Z"
+    },
+    "day28:architect": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T05:40:28.441Z",
+      "lastReviewedAt": "2026-05-27T05:40:28.441Z"
+    },
+    "day7:very": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T05:40:31.582Z",
+      "lastReviewedAt": "2026-05-27T05:40:31.582Z"
+    },
+    "day4:lax": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T05:40:36.413Z",
+      "lastReviewedAt": "2026-05-27T05:40:36.413Z"
+    },
+    "day24:reward": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T05:40:40.612Z",
+      "lastReviewedAt": "2026-05-27T05:40:40.612Z"
+    },
+    "day2:adhere": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T06:26:44.823Z",
+      "lastReviewedAt": "2026-05-27T06:26:44.823Z"
+    },
+    "day27:on behalf of": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T06:26:55.808Z",
+      "lastReviewedAt": "2026-05-27T06:26:55.808Z"
+    },
+    "day1:familiar": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-30T05:29:05.000Z",
+      "lastReviewedAt": "2026-06-24T05:29:05.000Z"
+    },
+    "day8:prefer": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.6,
+      "due": "2026-06-28T06:20:33.459Z",
+      "lastReviewedAt": "2026-06-22T06:20:33.459Z"
+    },
+    "day9:wane": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-23T02:00:41.806Z",
+      "lastReviewedAt": "2026-06-22T02:00:41.806Z"
+    },
+    "day1:entitle": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-30T06:40:28.507Z",
+      "lastReviewedAt": "2026-05-29T06:40:28.507Z"
+    },
+    "day7:expectation": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T06:42:38.241Z",
+      "lastReviewedAt": "2026-05-27T06:42:38.241Z"
+    },
+    "day30:insurance": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T07:00:07.236Z",
+      "lastReviewedAt": "2026-05-27T07:00:07.236Z"
+    },
+    "day10:relatively": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T07:00:28.050Z",
+      "lastReviewedAt": "2026-05-27T07:00:28.050Z"
+    },
+    "day12:place": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.22,
+      "due": "2026-06-28T08:40:53.723Z",
+      "lastReviewedAt": "2026-06-22T08:40:53.723Z"
+    },
+    "day13:commentary": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T07:00:39.239Z",
+      "lastReviewedAt": "2026-05-27T07:00:39.239Z"
+    },
+    "day6:variety": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-28T07:20:11.876Z",
+      "lastReviewedAt": "2026-05-27T07:20:11.876Z"
+    },
+    "day5:extended": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-24T02:01:35.195Z",
+      "lastReviewedAt": "2026-06-23T02:01:35.195Z"
+    },
+    "day30:necessary": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-07-01T05:40:37.625Z",
+      "lastReviewedAt": "2026-06-25T05:40:37.625Z"
+    },
+    "day1:interview": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.56,
+      "due": "2026-06-26T01:40:41.790Z",
+      "lastReviewedAt": "2026-06-25T01:40:41.790Z"
+    },
+    "day29:occur": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-29T01:40:10.173Z",
+      "lastReviewedAt": "2026-06-23T01:40:10.173Z"
+    },
+    "day9:stagnant": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-05-30T06:00:32.164Z",
+      "lastReviewedAt": "2026-05-29T06:00:32.164Z"
+    },
+    "day10:refund": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-28T23:48:15.876Z",
+      "lastReviewedAt": "2026-05-27T23:48:15.876Z"
+    },
+    "day6:admission": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T00:20:07.611Z",
+      "lastReviewedAt": "2026-05-28T00:20:07.611Z"
+    },
+    "day25:alleviate": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T00:20:26.370Z",
+      "lastReviewedAt": "2026-05-28T00:20:26.370Z"
+    },
+    "day6:information": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-29T00:20:31.405Z",
+      "lastReviewedAt": "2026-05-28T00:20:31.405Z"
+    },
+    "day1:meet": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-29T00:40:13.902Z",
+      "lastReviewedAt": "2026-05-28T00:40:13.902Z"
+    },
+    "day3:attendance": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-29T00:40:27.233Z",
+      "lastReviewedAt": "2026-05-28T00:40:27.233Z"
+    },
+    "day29:purify": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T00:40:31.116Z",
+      "lastReviewedAt": "2026-05-28T00:40:31.116Z"
+    },
+    "day14:proximity": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.18,
+      "due": "2026-05-29T01:00:09.865Z",
+      "lastReviewedAt": "2026-05-28T01:00:09.865Z"
+    },
+    "day13:combine": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-29T01:00:14.436Z",
+      "lastReviewedAt": "2026-05-28T01:00:14.436Z"
+    },
+    "day10:consumption": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T01:00:18.732Z",
+      "lastReviewedAt": "2026-05-28T01:00:18.732Z"
+    },
+    "day24:participation": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T01:00:22.497Z",
+      "lastReviewedAt": "2026-05-28T01:00:22.497Z"
+    },
+    "day5:outstanding": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T01:00:27.070Z",
+      "lastReviewedAt": "2026-05-28T01:00:27.070Z"
+    },
+    "day6:required": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.18,
+      "due": "2026-05-29T01:20:10.161Z",
+      "lastReviewedAt": "2026-05-28T01:20:10.161Z"
+    },
+    "day6:resume": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-29T01:20:14.039Z",
+      "lastReviewedAt": "2026-05-28T01:20:14.039Z"
+    },
+    "day17:pick up": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T01:20:18.584Z",
+      "lastReviewedAt": "2026-05-28T01:20:18.584Z"
+    },
+    "day15:cooperatively": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T01:20:23.240Z",
+      "lastReviewedAt": "2026-05-28T01:20:23.240Z"
+    },
+    "day11:intend": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T01:41:01.169Z",
+      "lastReviewedAt": "2026-05-28T01:41:01.169Z"
+    },
+    "day30:ability": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T01:41:03.887Z",
+      "lastReviewedAt": "2026-05-28T01:41:03.887Z"
+    },
+    "day22:distract": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-24T02:20:44.574Z",
+      "lastReviewedAt": "2026-06-23T02:20:44.574Z"
+    },
+    "day18:check in": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.8,
+      "due": "2026-06-26T05:40:12.946Z",
+      "lastReviewedAt": "2026-06-25T05:40:12.946Z"
+    },
+    "day15:expire": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-29T02:07:11.837Z",
+      "lastReviewedAt": "2026-05-28T02:07:11.837Z"
+    },
+    "day20:considerably": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T02:07:18.105Z",
+      "lastReviewedAt": "2026-05-28T02:07:18.105Z"
+    },
+    "day19:shift": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T02:07:21.552Z",
+      "lastReviewedAt": "2026-05-28T02:07:21.552Z"
+    },
+    "day12:operate": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T02:20:16.883Z",
+      "lastReviewedAt": "2026-05-28T02:20:16.883Z"
+    },
+    "day28:maintain": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T02:20:20.565Z",
+      "lastReviewedAt": "2026-05-28T02:20:20.565Z"
+    },
+    "day29:dense": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T02:20:25.792Z",
+      "lastReviewedAt": "2026-05-28T02:20:25.792Z"
+    },
+    "day5:major": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T02:20:29.394Z",
+      "lastReviewedAt": "2026-05-28T02:20:29.394Z"
+    },
+    "day25:ongoing": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T02:40:14.490Z",
+      "lastReviewedAt": "2026-05-28T02:40:14.490Z"
+    },
+    "day16:consignment": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T02:40:16.837Z",
+      "lastReviewedAt": "2026-05-28T02:40:16.837Z"
+    },
+    "day28:location": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T02:40:21.161Z",
+      "lastReviewedAt": "2026-05-28T02:40:21.161Z"
+    },
+    "day19:illustrate": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T03:00:09.078Z",
+      "lastReviewedAt": "2026-05-28T03:00:09.078Z"
+    },
+    "day1:resume": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T03:00:14.558Z",
+      "lastReviewedAt": "2026-05-28T03:00:14.558Z"
+    },
+    "day24:serve": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T03:00:20.999Z",
+      "lastReviewedAt": "2026-05-28T03:00:20.999Z"
+    },
+    "day24:mandatory": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T03:00:24.870Z",
+      "lastReviewedAt": "2026-05-28T03:00:24.870Z"
+    },
+    "day30:dietary": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T03:00:27.363Z",
+      "lastReviewedAt": "2026-05-28T03:00:27.363Z"
+    },
+    "day3:oversee": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T03:20:10.448Z",
+      "lastReviewedAt": "2026-05-28T03:20:10.448Z"
+    },
+    "day18:sequence": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T03:20:16.555Z",
+      "lastReviewedAt": "2026-05-28T03:20:16.555Z"
+    },
+    "day4:exclusive": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T03:20:21.518Z",
+      "lastReviewedAt": "2026-05-28T03:20:21.518Z"
+    },
+    "day14:away": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T03:20:26.336Z",
+      "lastReviewedAt": "2026-05-28T03:20:26.336Z"
+    },
+    "day12:utilize": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-29T03:40:27.648Z",
+      "lastReviewedAt": "2026-05-28T03:40:27.648Z"
+    },
+    "day27:propose": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T03:40:33.927Z",
+      "lastReviewedAt": "2026-05-28T03:40:33.927Z"
+    },
+    "day5:implement": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T03:40:38.121Z",
+      "lastReviewedAt": "2026-05-28T03:40:38.121Z"
+    },
+    "day8:initial": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T03:40:41.090Z",
+      "lastReviewedAt": "2026-05-28T03:40:41.090Z"
+    },
+    "day17:storage": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T03:40:43.996Z",
+      "lastReviewedAt": "2026-05-28T03:40:43.996Z"
+    },
+    "day12:attribute": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T04:54:47.152Z",
+      "lastReviewedAt": "2026-05-28T04:54:47.152Z"
+    },
+    "day2:negative": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T04:54:51.846Z",
+      "lastReviewedAt": "2026-05-28T04:54:51.846Z"
+    },
+    "day17:careful": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T04:55:05.283Z",
+      "lastReviewedAt": "2026-05-28T04:55:05.283Z"
+    },
+    "day9:particular": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T04:55:11.233Z",
+      "lastReviewedAt": "2026-05-28T04:55:11.233Z"
+    },
+    "day4:neutrality": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T05:47:41.897Z",
+      "lastReviewedAt": "2026-05-28T05:47:41.897Z"
+    },
+    "day16:retail": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-24T06:20:22.026Z",
+      "lastReviewedAt": "2026-06-23T06:20:22.026Z"
+    },
+    "day2:lagislation": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T06:40:06.441Z",
+      "lastReviewedAt": "2026-05-28T06:40:06.441Z"
+    },
+    "day14:suitcase": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.96,
+      "due": "2026-05-29T06:40:13.931Z",
+      "lastReviewedAt": "2026-05-28T06:40:13.931Z"
+    },
+    "day8:marginal": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T06:40:24.339Z",
+      "lastReviewedAt": "2026-05-28T06:40:24.339Z"
+    },
+    "day1:apprehensive": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T06:40:28.484Z",
+      "lastReviewedAt": "2026-05-28T06:40:28.484Z"
+    },
+    "day22:comment": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.56,
+      "due": "2026-06-26T02:33:00.995Z",
+      "lastReviewedAt": "2026-06-25T02:33:00.995Z"
+    },
+    "day21:productivity": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T07:02:09.563Z",
+      "lastReviewedAt": "2026-05-28T07:02:09.563Z"
+    },
+    "day7:buy": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T07:02:12.346Z",
+      "lastReviewedAt": "2026-05-28T07:02:12.346Z"
+    },
+    "day2:inspection": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-29T07:02:35.884Z",
+      "lastReviewedAt": "2026-05-28T07:02:35.884Z"
+    },
+    "day3:release": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.96,
+      "due": "2026-05-29T07:21:46.196Z",
+      "lastReviewedAt": "2026-05-28T07:21:46.196Z"
+    },
+    "day5:essential": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T08:00:45.336Z",
+      "lastReviewedAt": "2026-05-28T08:00:45.336Z"
+    },
+    "day30:easily": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T08:00:53.263Z",
+      "lastReviewedAt": "2026-05-28T08:00:53.263Z"
+    },
+    "day28:furnished": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T08:01:10.071Z",
+      "lastReviewedAt": "2026-05-28T08:01:10.071Z"
+    },
+    "day13:defective": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-25T03:00:05.507Z",
+      "lastReviewedAt": "2026-06-24T03:00:05.507Z"
+    },
+    "day6:local": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T08:20:14.309Z",
+      "lastReviewedAt": "2026-05-28T08:20:14.309Z"
+    },
+    "day15:security": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T08:20:17.118Z",
+      "lastReviewedAt": "2026-05-28T08:20:17.118Z"
+    },
+    "day18:extensive": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T08:20:25.730Z",
+      "lastReviewedAt": "2026-05-28T08:20:25.730Z"
+    },
+    "day10:price": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-29T08:20:29.710Z",
+      "lastReviewedAt": "2026-05-28T08:20:29.710Z"
+    },
+    "day19:projection": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-29T08:43:07.006Z",
+      "lastReviewedAt": "2026-05-28T08:43:07.006Z"
+    },
+    "day9:lead": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-30T00:20:08.021Z",
+      "lastReviewedAt": "2026-05-29T00:20:08.021Z"
+    },
+    "day4:skillfully": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-30T00:20:14.195Z",
+      "lastReviewedAt": "2026-05-29T00:20:14.195Z"
+    },
+    "day10:receipt": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-30T00:20:17.817Z",
+      "lastReviewedAt": "2026-05-29T00:20:17.817Z"
+    },
+    "day7:appreciate": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-30T00:20:25.732Z",
+      "lastReviewedAt": "2026-05-29T00:20:25.732Z"
+    },
+    "day10:authentic": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-30T00:40:07.241Z",
+      "lastReviewedAt": "2026-05-29T00:40:07.241Z"
+    },
+    "day14:passenger": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-30T00:40:58.452Z",
+      "lastReviewedAt": "2026-05-29T00:40:58.452Z"
+    },
+    "day28:densely": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-05-30T00:41:03.771Z",
+      "lastReviewedAt": "2026-05-29T00:41:03.771Z"
+    },
+    "day20:browse": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-30T01:40:17.095Z",
+      "lastReviewedAt": "2026-05-29T01:40:17.095Z"
+    },
+    "day9:fairly": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.38,
+      "due": "2026-06-24T02:01:44.409Z",
+      "lastReviewedAt": "2026-06-23T02:01:44.409Z"
+    },
+    "day14:dramatic": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.28,
+      "due": "2026-06-23T23:45:58.155Z",
+      "lastReviewedAt": "2026-06-22T23:45:58.155Z"
+    },
+    "day17:impose": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-30T01:40:35.832Z",
+      "lastReviewedAt": "2026-05-29T01:40:35.832Z"
+    },
+    "day20:frequently": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-30T04:45:38.778Z",
+      "lastReviewedAt": "2026-05-29T04:45:38.778Z"
+    },
+    "day4:hardly": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-30T04:45:44.267Z",
+      "lastReviewedAt": "2026-05-29T04:45:44.267Z"
+    },
+    "day10:auction": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-30T04:45:53.496Z",
+      "lastReviewedAt": "2026-05-29T04:45:53.496Z"
+    },
+    "day7:postpone": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-30T05:41:30.078Z",
+      "lastReviewedAt": "2026-05-29T05:41:30.078Z"
+    },
+    "day15:negotiation": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-30T05:41:46.117Z",
+      "lastReviewedAt": "2026-05-29T05:41:46.117Z"
+    },
+    "day11:response": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-30T05:41:49.604Z",
+      "lastReviewedAt": "2026-05-29T05:41:49.604Z"
+    },
+    "day10:subscriber": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.8,
+      "due": "2026-06-22T23:48:08.487Z",
+      "lastReviewedAt": "2026-06-21T23:48:08.487Z"
+    },
+    "day30:join": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-30T06:00:12.374Z",
+      "lastReviewedAt": "2026-05-29T06:00:12.374Z"
+    },
+    "day15:confidentiality": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-30T06:00:21.564Z",
+      "lastReviewedAt": "2026-05-29T06:00:21.564Z"
+    },
+    "day3:submit": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-28T03:00:05.806Z",
+      "lastReviewedAt": "2026-06-22T03:00:05.806Z"
+    },
+    "day13:return": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-30T06:00:55.603Z",
+      "lastReviewedAt": "2026-05-29T06:00:55.603Z"
+    },
+    "day26:receive": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-29T00:20:07.657Z",
+      "lastReviewedAt": "2026-06-23T00:20:07.657Z"
+    },
+    "day11:inspiration": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-30T06:40:15.412Z",
+      "lastReviewedAt": "2026-05-29T06:40:15.412Z"
+    },
+    "day26:due": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-30T06:40:43.195Z",
+      "lastReviewedAt": "2026-05-29T06:40:43.195Z"
+    },
+    "day13:critical": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-30T06:40:48.163Z",
+      "lastReviewedAt": "2026-05-29T06:40:48.163Z"
+    },
+    "day18:occupancy": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-05-30T07:21:33.069Z",
+      "lastReviewedAt": "2026-05-29T07:21:33.069Z"
+    },
+    "day17:shipment": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-05-30T07:21:36.011Z",
+      "lastReviewedAt": "2026-05-29T07:21:36.011Z"
+    },
+    "day15:commission": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.8,
+      "due": "2026-06-26T06:20:09.160Z",
+      "lastReviewedAt": "2026-06-25T06:20:09.160Z"
+    },
+    "day20:financial": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-22T23:45:50.862Z",
+      "lastReviewedAt": "2026-06-21T23:45:50.862Z"
+    },
+    "day29:habitat": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-24T02:41:29.090Z",
+      "lastReviewedAt": "2026-06-23T02:41:29.090Z"
+    },
+    "day10:affordable": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-25T05:40:47.838Z",
+      "lastReviewedAt": "2026-06-24T05:40:47.838Z"
+    },
+    "day3:electronically": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.18,
+      "due": "2026-06-23T00:21:23.673Z",
+      "lastReviewedAt": "2026-06-22T00:21:23.673Z"
+    },
+    "day20:measurement": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-23T00:21:28.366Z",
+      "lastReviewedAt": "2026-06-22T00:21:28.366Z"
+    },
+    "day13:deal": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-23T00:21:37.616Z",
+      "lastReviewedAt": "2026-06-22T00:21:37.616Z"
+    },
+    "day23:labor": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-26T01:40:28.126Z",
+      "lastReviewedAt": "2026-06-25T01:40:28.126Z"
+    },
+    "day11:upgrade": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-06-23T02:00:26.576Z",
+      "lastReviewedAt": "2026-06-22T02:00:26.576Z"
+    },
+    "day2:comply": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-23T02:00:48.541Z",
+      "lastReviewedAt": "2026-06-22T02:00:48.541Z"
+    },
+    "day23:conference": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-23T02:00:55.151Z",
+      "lastReviewedAt": "2026-06-22T02:00:55.151Z"
+    },
+    "day30:exposure": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-06-23T02:01:02.786Z",
+      "lastReviewedAt": "2026-06-22T02:01:02.786Z"
+    },
+    "day25:vehicle": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-23T03:00:10.697Z",
+      "lastReviewedAt": "2026-06-22T03:00:10.697Z"
+    },
+    "day16:commercial": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-23T03:00:17.378Z",
+      "lastReviewedAt": "2026-06-22T03:00:17.378Z"
+    },
+    "day12:respectively": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-06-23T05:22:18.081Z",
+      "lastReviewedAt": "2026-06-22T05:22:18.081Z"
+    },
+    "day14:destination": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.5,
+      "due": "2026-06-23T05:22:24.222Z",
+      "lastReviewedAt": "2026-06-22T05:22:24.222Z"
+    },
+    "day12:epuipment": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.7,
+      "due": "2026-06-30T08:00:06.760Z",
+      "lastReviewedAt": "2026-06-24T08:00:06.760Z"
+    },
+    "day21:initiate": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-23T05:22:41.108Z",
+      "lastReviewedAt": "2026-06-22T05:22:41.108Z"
+    },
+    "day4:accomplish": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-23T05:22:48.028Z",
+      "lastReviewedAt": "2026-06-22T05:22:48.028Z"
+    },
+    "day23:salary": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-23T05:40:16.283Z",
+      "lastReviewedAt": "2026-06-22T05:40:16.283Z"
+    },
+    "day19:revenue": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-23T05:40:33.012Z",
+      "lastReviewedAt": "2026-06-22T05:40:33.012Z"
+    },
+    "day9:pleased": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-23T05:40:43.782Z",
+      "lastReviewedAt": "2026-06-22T05:40:43.782Z"
+    },
+    "day4:personnel": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-23T06:08:00.233Z",
+      "lastReviewedAt": "2026-06-22T06:08:00.233Z"
+    },
+    "day8:necessarily": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-23T06:08:16.603Z",
+      "lastReviewedAt": "2026-06-22T06:08:16.603Z"
+    },
+    "day21:merge": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-06-23T06:08:26.571Z",
+      "lastReviewedAt": "2026-06-22T06:08:26.571Z"
+    },
+    "day20:amend": {
+      "reps": 0,
+      "lapses": 2,
+      "intervalDays": 1,
+      "ease": 1.3,
+      "due": "2026-06-25T01:40:22.091Z",
+      "lastReviewedAt": "2026-06-24T01:40:22.091Z"
+    },
+    "day30:nutrition": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.46,
+      "due": "2026-07-01T01:24:20.554Z",
+      "lastReviewedAt": "2026-06-25T01:24:20.554Z"
+    },
+    "day29:pleasing": {
+      "reps": 2,
+      "lapses": 0,
+      "intervalDays": 6,
+      "ease": 2.46,
+      "due": "2026-06-30T05:40:12.724Z",
+      "lastReviewedAt": "2026-06-24T05:40:12.724Z"
+    },
+    "day9:substitute": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-23T06:40:09.160Z",
+      "lastReviewedAt": "2026-06-22T06:40:09.160Z"
+    },
+    "day4:assign": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-23T06:40:14.971Z",
+      "lastReviewedAt": "2026-06-22T06:40:14.971Z"
+    },
+    "day4:collect": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-23T06:40:27.212Z",
+      "lastReviewedAt": "2026-06-22T06:40:27.212Z"
+    },
+    "day18:complimentary": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-23T08:01:48.592Z",
+      "lastReviewedAt": "2026-06-22T08:01:48.592Z"
+    },
+    "day13:satisfaction": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-23T08:01:53.242Z",
+      "lastReviewedAt": "2026-06-22T08:01:53.242Z"
+    },
+    "day29:damage": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-06-23T08:20:10.645Z",
+      "lastReviewedAt": "2026-06-22T08:20:10.645Z"
+    },
+    "day9:soar": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.18,
+      "due": "2026-06-23T08:20:16.891Z",
+      "lastReviewedAt": "2026-06-22T08:20:16.891Z"
+    },
+    "day7:respondent": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-23T08:20:25.581Z",
+      "lastReviewedAt": "2026-06-22T08:20:25.581Z"
+    },
+    "day8:means": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-23T08:20:29.268Z",
+      "lastReviewedAt": "2026-06-22T08:20:29.268Z"
+    },
+    "day4:contrary": {
+      "reps": 1,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-25T03:41:13.990Z",
+      "lastReviewedAt": "2026-06-24T03:41:13.990Z"
+    },
+    "day8:less": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.96,
+      "due": "2026-06-23T08:41:04.096Z",
+      "lastReviewedAt": "2026-06-22T08:41:04.096Z"
+    },
+    "day3:remind": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-23T23:45:47.320Z",
+      "lastReviewedAt": "2026-06-22T23:45:47.320Z"
+    },
+    "day30:prescribe": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-23T23:45:53.305Z",
+      "lastReviewedAt": "2026-06-22T23:45:53.305Z"
+    },
+    "day5:provider": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-23T23:46:01.282Z",
+      "lastReviewedAt": "2026-06-22T23:46:01.282Z"
+    },
+    "day16:provide": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-23T23:46:04.822Z",
+      "lastReviewedAt": "2026-06-22T23:46:04.822Z"
+    },
+    "day13:biography": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-24T00:20:15.978Z",
+      "lastReviewedAt": "2026-06-23T00:20:15.978Z"
+    },
+    "day28:enlarge": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-06-24T00:20:21.460Z",
+      "lastReviewedAt": "2026-06-23T00:20:21.460Z"
+    },
+    "day11:improve": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.5,
+      "due": "2026-06-24T00:20:26.283Z",
+      "lastReviewedAt": "2026-06-23T00:20:26.283Z"
+    },
+    "day6:issue": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-06-24T00:20:31.563Z",
+      "lastReviewedAt": "2026-06-23T00:20:31.563Z"
+    },
+    "day22:phase": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-24T00:40:15.029Z",
+      "lastReviewedAt": "2026-06-23T00:40:15.029Z"
+    },
+    "day21:emerge": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.18,
+      "due": "2026-06-24T00:40:22.235Z",
+      "lastReviewedAt": "2026-06-23T00:40:22.235Z"
+    },
+    "day20:deduct": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-24T01:20:07.895Z",
+      "lastReviewedAt": "2026-06-23T01:20:07.895Z"
+    },
+    "day27:unprecedented": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-24T01:20:21.508Z",
+      "lastReviewedAt": "2026-06-23T01:20:21.508Z"
+    },
+    "day26:alternatively": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.96,
+      "due": "2026-06-24T01:20:27.939Z",
+      "lastReviewedAt": "2026-06-23T01:20:27.939Z"
+    },
+    "day4:duplicate": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.18,
+      "due": "2026-06-24T01:20:34.145Z",
+      "lastReviewedAt": "2026-06-23T01:20:34.145Z"
+    },
+    "day8:majority": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.18,
+      "due": "2026-06-24T01:20:40.668Z",
+      "lastReviewedAt": "2026-06-23T01:20:40.668Z"
+    },
+    "day21:last": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.18,
+      "due": "2026-06-24T01:40:06.593Z",
+      "lastReviewedAt": "2026-06-23T01:40:06.593Z"
+    },
+    "day13:depend on": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-24T01:40:20.626Z",
+      "lastReviewedAt": "2026-06-23T01:40:20.626Z"
+    },
+    "day23:emphasize": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.18,
+      "due": "2026-06-24T01:40:29.530Z",
+      "lastReviewedAt": "2026-06-23T01:40:29.530Z"
+    },
+    "day11:indication": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-24T02:01:28.183Z",
+      "lastReviewedAt": "2026-06-23T02:01:28.183Z"
+    },
+    "day18:freshness": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-24T02:01:40.420Z",
+      "lastReviewedAt": "2026-06-23T02:01:40.420Z"
+    },
+    "day28:suppose": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-24T02:20:17.241Z",
+      "lastReviewedAt": "2026-06-23T02:20:17.241Z"
+    },
+    "day8:detect": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-24T02:20:29.197Z",
+      "lastReviewedAt": "2026-06-23T02:20:29.197Z"
+    },
+    "day12:renovate": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.5,
+      "due": "2026-06-24T02:41:05.166Z",
+      "lastReviewedAt": "2026-06-23T02:41:05.166Z"
+    },
+    "day19:percentage": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-24T03:02:55.715Z",
+      "lastReviewedAt": "2026-06-23T03:02:55.715Z"
+    },
+    "day7:examine": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-24T03:02:59.116Z",
+      "lastReviewedAt": "2026-06-23T03:02:59.116Z"
+    },
+    "day15:proceed": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-24T03:03:02.966Z",
+      "lastReviewedAt": "2026-06-23T03:03:02.966Z"
+    },
+    "day2:ban": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-24T03:03:06.829Z",
+      "lastReviewedAt": "2026-06-23T03:03:06.829Z"
+    },
+    "day18:reception": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-06-24T03:03:17.978Z",
+      "lastReviewedAt": "2026-06-23T03:03:17.978Z"
+    },
+    "day7:gap": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-24T03:20:36.444Z",
+      "lastReviewedAt": "2026-06-23T03:20:36.444Z"
+    },
+    "day16:bargain": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-24T03:40:32.682Z",
+      "lastReviewedAt": "2026-06-23T03:40:32.682Z"
+    },
+    "day28:totally": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-24T03:40:36.228Z",
+      "lastReviewedAt": "2026-06-23T03:40:36.228Z"
+    },
+    "day11:compatible": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-24T03:40:48.351Z",
+      "lastReviewedAt": "2026-06-23T03:40:48.351Z"
+    },
+    "day6:improvise": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-24T03:41:09.932Z",
+      "lastReviewedAt": "2026-06-23T03:41:09.932Z"
+    },
+    "day15:renew": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.96,
+      "due": "2026-06-24T04:58:50.062Z",
+      "lastReviewedAt": "2026-06-23T04:58:50.062Z"
+    },
+    "day17:affix": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-24T04:59:00.538Z",
+      "lastReviewedAt": "2026-06-23T04:59:00.538Z"
+    },
+    "day23:union": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-24T04:59:04.804Z",
+      "lastReviewedAt": "2026-06-23T04:59:04.804Z"
+    },
+    "day14:seating": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.18,
+      "due": "2026-06-24T05:45:48.497Z",
+      "lastReviewedAt": "2026-06-23T05:45:48.497Z"
+    },
+    "day10:preparation": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-24T05:45:52.251Z",
+      "lastReviewedAt": "2026-06-23T05:45:52.251Z"
+    },
+    "day10:clearance": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-06-24T05:46:08.233Z",
+      "lastReviewedAt": "2026-06-23T05:46:08.233Z"
+    },
+    "day2:habit": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-24T05:46:15.716Z",
+      "lastReviewedAt": "2026-06-23T05:46:15.716Z"
+    },
+    "day8:attract": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-06-24T06:20:13.930Z",
+      "lastReviewedAt": "2026-06-23T06:20:13.930Z"
+    },
+    "day30:prevention": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-24T06:20:18.366Z",
+      "lastReviewedAt": "2026-06-23T06:20:18.366Z"
+    },
+    "day16:market": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-24T23:56:08.001Z",
+      "lastReviewedAt": "2026-06-23T23:56:08.001Z"
+    },
+    "day15:objection": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-24T23:56:36.803Z",
+      "lastReviewedAt": "2026-06-23T23:56:36.803Z"
+    },
+    "day22:usually": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-24T23:56:42.339Z",
+      "lastReviewedAt": "2026-06-23T23:56:42.339Z"
+    },
+    "day24:strictly": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-24T23:56:47.464Z",
+      "lastReviewedAt": "2026-06-23T23:56:47.464Z"
+    },
+    "day9:impede": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-25T01:01:56.299Z",
+      "lastReviewedAt": "2026-06-24T01:01:56.299Z"
+    },
+    "day22:unanimous": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-25T01:02:15.367Z",
+      "lastReviewedAt": "2026-06-24T01:02:15.367Z"
+    },
+    "day29:vary": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-25T01:02:26.508Z",
+      "lastReviewedAt": "2026-06-24T01:02:26.508Z"
+    },
+    "day29:prominent": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-25T01:02:38.410Z",
+      "lastReviewedAt": "2026-06-24T01:02:38.410Z"
+    },
+    "day16:supply": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-25T01:02:51.264Z",
+      "lastReviewedAt": "2026-06-24T01:02:51.264Z"
+    },
+    "day26:cash": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-06-25T01:40:07.312Z",
+      "lastReviewedAt": "2026-06-24T01:40:07.312Z"
+    },
+    "day12:processing": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.18,
+      "due": "2026-06-25T01:40:17.639Z",
+      "lastReviewedAt": "2026-06-24T01:40:17.639Z"
+    },
+    "day12:automate": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-06-25T01:40:29.353Z",
+      "lastReviewedAt": "2026-06-24T01:40:29.353Z"
+    },
+    "day7:focus": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-06-25T01:40:38.867Z",
+      "lastReviewedAt": "2026-06-24T01:40:38.867Z"
+    },
+    "day14:itinerary": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-25T03:00:06.733Z",
+      "lastReviewedAt": "2026-06-24T03:00:06.733Z"
+    },
+    "day29:continually": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-25T03:00:07.064Z",
+      "lastReviewedAt": "2026-06-24T03:00:07.064Z"
+    },
+    "day29:environmental": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-06-25T03:25:34.746Z",
+      "lastReviewedAt": "2026-06-24T03:25:34.746Z"
+    },
+    "day27:speculation": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-25T03:26:02.079Z",
+      "lastReviewedAt": "2026-06-24T03:26:02.079Z"
+    },
+    "day27:innate": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-25T03:26:10.038Z",
+      "lastReviewedAt": "2026-06-24T03:26:10.038Z"
+    },
+    "day6:audience": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-25T03:26:19.057Z",
+      "lastReviewedAt": "2026-06-24T03:26:19.057Z"
+    },
+    "day25:fare": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-25T03:40:47.739Z",
+      "lastReviewedAt": "2026-06-24T03:40:47.739Z"
+    },
+    "day21:establish": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-25T03:40:51.540Z",
+      "lastReviewedAt": "2026-06-24T03:40:51.540Z"
+    },
+    "day27:entrepreneur": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-25T03:41:06.462Z",
+      "lastReviewedAt": "2026-06-24T03:41:06.462Z"
+    },
+    "day10:charge": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-25T05:29:00.645Z",
+      "lastReviewedAt": "2026-06-24T05:29:00.645Z"
+    },
+    "day17:formerly": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-25T05:29:17.557Z",
+      "lastReviewedAt": "2026-06-24T05:29:17.557Z"
+    },
+    "day16:order": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-25T05:40:51.307Z",
+      "lastReviewedAt": "2026-06-24T05:40:51.307Z"
+    },
+    "day6:showing": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-25T07:20:17.443Z",
+      "lastReviewedAt": "2026-06-24T07:20:17.443Z"
+    },
+    "day7:campaign": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-25T07:20:28.956Z",
+      "lastReviewedAt": "2026-06-24T07:20:28.956Z"
+    },
+    "day14:baggage": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-06-25T07:20:44.754Z",
+      "lastReviewedAt": "2026-06-24T07:20:44.754Z"
+    },
+    "day16:assure": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-25T07:20:54.189Z",
+      "lastReviewedAt": "2026-06-24T07:20:54.189Z"
+    },
+    "day9:drastic": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-25T08:00:11.798Z",
+      "lastReviewedAt": "2026-06-24T08:00:11.798Z"
+    },
+    "day11:explore": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-25T08:00:15.512Z",
+      "lastReviewedAt": "2026-06-24T08:00:15.512Z"
+    },
+    "day18:ingredient": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-25T08:00:22.205Z",
+      "lastReviewedAt": "2026-06-24T08:00:22.205Z"
+    },
+    "day21:informed": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.18,
+      "due": "2026-06-25T08:00:31.566Z",
+      "lastReviewedAt": "2026-06-24T08:00:31.566Z"
+    },
+    "day3:headquarters": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-25T08:23:41.312Z",
+      "lastReviewedAt": "2026-06-24T08:23:41.312Z"
+    },
+    "day15:review": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-25T08:24:00.412Z",
+      "lastReviewedAt": "2026-06-24T08:24:00.412Z"
+    },
+    "day6:anonymous": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-26T01:25:08.430Z",
+      "lastReviewedAt": "2026-06-25T01:25:08.430Z"
+    },
+    "day21:reach": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-26T01:25:39.775Z",
+      "lastReviewedAt": "2026-06-25T01:25:39.775Z"
+    },
+    "day4:foster": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-26T01:40:16.309Z",
+      "lastReviewedAt": "2026-06-25T01:40:16.309Z"
+    },
+    "day4:widely": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.18,
+      "due": "2026-06-26T01:40:22.162Z",
+      "lastReviewedAt": "2026-06-25T01:40:22.162Z"
+    },
+    "day21:dedicated": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-26T02:33:27.625Z",
+      "lastReviewedAt": "2026-06-25T02:33:27.625Z"
+    },
+    "day13:reflect": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.36,
+      "due": "2026-06-26T02:33:38.448Z",
+      "lastReviewedAt": "2026-06-25T02:33:38.448Z"
+    },
+    "day29:drought": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-26T02:33:47.044Z",
+      "lastReviewedAt": "2026-06-25T02:33:47.044Z"
+    },
+    "day22:constructive": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-26T02:33:57.868Z",
+      "lastReviewedAt": "2026-06-25T02:33:57.868Z"
+    },
+    "day2:approval": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 2.18,
+      "due": "2026-06-26T02:41:41.431Z",
+      "lastReviewedAt": "2026-06-25T02:41:41.431Z"
+    },
+    "day1:occupation": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-26T02:41:45.211Z",
+      "lastReviewedAt": "2026-06-25T02:41:45.211Z"
+    },
+    "day16:acclaim": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-26T02:41:52.215Z",
+      "lastReviewedAt": "2026-06-25T02:41:52.215Z"
+    },
+    "day8:steadily": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-26T02:41:55.999Z",
+      "lastReviewedAt": "2026-06-25T02:41:55.999Z"
+    },
+    "day16:invoice": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-26T02:41:58.864Z",
+      "lastReviewedAt": "2026-06-25T02:41:58.864Z"
+    },
+    "day6:subscription": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-26T03:03:17.099Z",
+      "lastReviewedAt": "2026-06-25T03:03:17.099Z"
+    },
+    "day18:accommodate": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-26T03:03:44.203Z",
+      "lastReviewedAt": "2026-06-25T03:03:44.203Z"
+    },
+    "day18:rate": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-26T03:03:51.364Z",
+      "lastReviewedAt": "2026-06-25T03:03:51.364Z"
+    },
+    "day20:audit": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-26T03:21:27.195Z",
+      "lastReviewedAt": "2026-06-25T03:21:27.195Z"
+    },
+    "day30:recognize": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-26T03:21:30.949Z",
+      "lastReviewedAt": "2026-06-25T03:21:30.949Z"
+    },
+    "day18:refreshments": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-26T03:21:35.668Z",
+      "lastReviewedAt": "2026-06-25T03:21:35.668Z"
+    },
+    "day17:perishable": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-26T03:21:37.633Z",
+      "lastReviewedAt": "2026-06-25T03:21:37.633Z"
+    },
+    "day28:adjacent": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-26T05:40:49.441Z",
+      "lastReviewedAt": "2026-06-25T05:40:49.441Z"
+    },
+    "day11:broaden": {
+      "reps": 1,
+      "lapses": 0,
+      "intervalDays": 1,
+      "ease": 2.6,
+      "due": "2026-06-26T05:40:55.323Z",
+      "lastReviewedAt": "2026-06-25T05:40:55.323Z"
+    },
+    "day27:shareholder": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-26T06:20:06.107Z",
+      "lastReviewedAt": "2026-06-25T06:20:06.107Z"
+    },
+    "day11:successful": {
+      "reps": 0,
+      "lapses": 1,
+      "intervalDays": 1,
+      "ease": 1.7,
+      "due": "2026-06-26T06:20:16.059Z",
+      "lastReviewedAt": "2026-06-25T06:20:16.059Z"
+    }
+  },
+  "updatedAt": "2026-06-25T06:20:19.178Z"
+}

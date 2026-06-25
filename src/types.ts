@@ -76,4 +76,4 @@ export interface StudySession {
   durationMs: number
 }
 
-export type TabId = 'solve' | 'register' | 'review' | 'stats' | 'list'
+export type TabId = 'solve' | 'register' | 'review' | 'vocab' | 'stats' | 'list'
