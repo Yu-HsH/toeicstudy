@@ -24,6 +24,59 @@ interface ImportPreview {
   duplicateCount: number
 }
 
+const CSV_CREATION_PROMPT = `TOEIC RC 학습 앱에 가져올 CSV 데이터를 만들어 주세요.
+
+실제 TOEIC 기출문제, ETS/YBM 교재, 시중 문제집 문항을 복제하거나 변형하지 말고, 완전히 새로운 오리지널 TOEIC 스타일 문제로 작성하세요.
+
+CSV 헤더는 반드시 아래 순서와 이름을 그대로 사용하세요.
+part,questionText,choiceA,choiceB,choiceC,choiceD,correctAnswer,myAnswer,explanation,tags,mistakeReason,passage,groupId,questionNumber
+
+생성 분량:
+- Part 5: 100문제
+- Part 6: 100문제
+- Part 7: 100문제
+- 총 300행
+
+공통 규칙:
+- 출력은 CSV 코드블록 하나만 주세요.
+- CSV 외 설명 문장은 쓰지 마세요.
+- 모든 셀은 큰따옴표로 감싸세요.
+- 셀 안에 줄바꿈과 큰따옴표 문자는 쓰지 마세요.
+- correctAnswer는 A, B, C, D 중 하나만 쓰세요.
+- myAnswer와 mistakeReason은 항상 빈칸으로 두세요.
+- explanation은 한국어로 짧고 실전적으로 작성하세요.
+- tags는 여러 개면 | 로 구분하세요.
+- 정답 위치 A/B/C/D는 최대한 고르게 분포시키세요.
+- 난이도는 쉬움 30%, 중간 50%, 어려움 20% 정도로 섞으세요.
+
+Part 5 규칙:
+- part 값은 "Part 5"
+- passage, groupId, questionNumber는 빈칸으로 두세요.
+- 어휘, 품사, 동사 형태, 시제, 수일치, 전치사, 접속사, 관계사, 비교급, 수동태 유형을 골고루 섞으세요.
+
+Part 6 규칙:
+- part 값은 "Part 6"
+- 하나의 passage에 4문제씩 묶어 총 25개 지문을 만드세요.
+- groupId는 P6-001부터 P6-025까지 사용하세요.
+- questionNumber는 각 groupId 안에서 1, 2, 3, 4로 작성하세요.
+- 같은 groupId의 4행은 동일한 passage를 사용하세요.
+- passage는 이메일, 공지, 메모, 광고, 안내문 등 짧은 비즈니스 지문으로 작성하세요.
+- questionText는 빈칸 보충, 문장 삽입, 문맥 연결 유형을 섞으세요.
+
+Part 7 규칙:
+- part 값은 "Part 7"
+- 하나의 passage에 4문제씩 묶어 총 25개 지문을 만드세요.
+- groupId는 P7-001부터 P7-025까지 사용하세요.
+- questionNumber는 각 groupId 안에서 1, 2, 3, 4로 작성하세요.
+- 같은 groupId의 4행은 동일한 passage를 사용하세요.
+- passage는 이메일, 공지, 채팅, 광고, 일정표, 기사, 영수증, 안내문 등 TOEIC RC 스타일 지문으로 작성하세요.
+- questionText는 주제, 세부정보, 추론, 의도, 동의어, 문장 삽입 유형을 골고루 섞으세요.
+
+중요:
+- 총 300행을 생략 없이 작성하세요.
+- 중간에 "이하 생략" 같은 표현을 절대 쓰지 마세요.
+- 출력이 너무 길어 한 번에 끝낼 수 없으면, 완성된 행까지만 출력하고 멈춘 뒤 제가 "계속"이라고 하면 다음 행부터 이어서 출력하세요. 이어서 출력할 때는 헤더를 반복하지 마세요.`
+
 function getQuestionSignature(question: Question): string {
   return [
     question.part,
@@ -47,6 +100,8 @@ export function ListPage({ questions, onDelete, onUpdate, onImport }: ListPagePr
   const [importMessage, setImportMessage] = useState('')
   const [importPreview, setImportPreview] = useState<ImportPreview | null>(null)
   const [dedupeImport, setDedupeImport] = useState(true)
+  const [promptOpen, setPromptOpen] = useState(false)
+  const [promptCopyLabel, setPromptCopyLabel] = useState('복사')
   const fileInputRef = useRef<HTMLInputElement>(null)
   const existingSignatures = useMemo(
     () => new Set(questions.map((question) => getQuestionSignature(question))),
@@ -118,6 +173,17 @@ export function ListPage({ questions, onDelete, onUpdate, onImport }: ListPagePr
     window.setTimeout(() => setImportMessage(''), 3000)
   }
 
+  const copyCsvPrompt = async () => {
+    try {
+      await navigator.clipboard.writeText(CSV_CREATION_PROMPT)
+      setPromptCopyLabel('복사됨')
+      window.setTimeout(() => setPromptCopyLabel('복사'), 1500)
+    } catch {
+      setPromptCopyLabel('실패')
+      window.setTimeout(() => setPromptCopyLabel('복사'), 1500)
+    }
+  }
+
   return (
     <section className="page-section">
       <div className="section-heading split-heading">
@@ -150,6 +216,15 @@ export function ListPage({ questions, onDelete, onUpdate, onImport }: ListPagePr
           >
             {'CSV \uB0B4\uBCF4\uB0B4\uAE30'}
           </button>
+          <button
+            className="icon-button"
+            type="button"
+            aria-label="CSV 생성 프롬프트"
+            title="CSV 생성 프롬프트"
+            onClick={() => setPromptOpen((current) => !current)}
+          >
+            ?
+          </button>
         </div>
       </div>
 
@@ -157,6 +232,23 @@ export function ListPage({ questions, onDelete, onUpdate, onImport }: ListPagePr
       <div className={`inline-notice ${importMessage ? 'visible' : ''}`} role="status">
         {importMessage}
       </div>
+
+      {promptOpen && (
+        <div className="csv-prompt-panel panel">
+          <div className="card-title-row">
+            <h3>CSV 생성 프롬프트</h3>
+            <div className="button-row">
+              <button className="button ghost small" type="button" onClick={copyCsvPrompt}>
+                {promptCopyLabel}
+              </button>
+              <button className="button ghost small" type="button" onClick={() => setPromptOpen(false)}>
+                닫기
+              </button>
+            </div>
+          </div>
+          <textarea readOnly rows={16} value={CSV_CREATION_PROMPT} />
+        </div>
+      )}
 
       {importPreview && (
         <div className="import-preview panel">
