@@ -1,9 +1,17 @@
 import { EmptyState } from '../components/EmptyState'
-import type { Question } from '../types'
+import type { Question, StudySession } from '../types'
 import { getQuestionStats } from '../utils/stats'
 
 interface StatsPageProps {
   questions: Question[]
+  sessions: StudySession[]
+}
+
+function formatDuration(durationMs: number): string {
+  const totalSeconds = Math.max(0, Math.floor(durationMs / 1000))
+  const minutes = Math.floor(totalSeconds / 60)
+  const seconds = totalSeconds % 60
+  return `${minutes}:${seconds.toString().padStart(2, '0')}`
 }
 
 function BarList({
@@ -31,8 +39,8 @@ function BarList({
   )
 }
 
-export function StatsPage({ questions }: StatsPageProps) {
-  const stats = getQuestionStats(questions)
+export function StatsPage({ questions, sessions }: StatsPageProps) {
+  const stats = getQuestionStats(questions, sessions)
 
   return (
     <section className="page-section">
@@ -62,6 +70,26 @@ export function StatsPage({ questions }: StatsPageProps) {
               <small>총 {stats.attemptCount}회 풀이 기준</small>
             </div>
             <div className="stat-card">
+              <span>첫 풀이 정답률</span>
+              <strong>{stats.firstAccuracy}%</strong>
+              <small>처음 고른 답 기준</small>
+            </div>
+            <div className="stat-card">
+              <span>오늘 복습</span>
+              <strong>{stats.dueReview}</strong>
+              <small>대기 {stats.waitingReview}문제</small>
+            </div>
+            <div className="stat-card">
+              <span>복습 성공률</span>
+              <strong>{stats.reviewAccuracy}%</strong>
+              <small>복습 {stats.reviewAttemptCount}회 기준</small>
+            </div>
+            <div className="stat-card">
+              <span>최근 실전</span>
+              <strong>{stats.recentSessionAccuracy}%</strong>
+              <small>최근 7일 세트 기준</small>
+            </div>
+            <div className="stat-card">
               <span>최근 등록</span>
               <strong>{stats.recent}</strong>
               <small>최근 7일</small>
@@ -85,6 +113,40 @@ export function StatsPage({ questions }: StatsPageProps) {
                 items={stats.reasonMistakes}
                 emptyText="오답의 틀린 이유를 선택하면 표시됩니다."
               />
+            </div>
+            <div className="panel chart-card">
+              <div className="card-title-row">
+                <h3>태그별 약점</h3>
+                <span>누적 오답 태그</span>
+              </div>
+              <BarList items={stats.tagMistakes} emptyText="오답 태그가 아직 없습니다." />
+            </div>
+            <div className="panel chart-card">
+              <div className="card-title-row">
+                <h3>최근 실전 기록</h3>
+                <span>평균 {formatDuration(stats.averageSessionDuration)}</span>
+              </div>
+              {stats.latestSessions.length === 0 ? (
+                <p className="muted-text">아직 저장된 실전 세트가 없습니다.</p>
+              ) : (
+                <div className="session-list">
+                  {stats.latestSessions.map((session) => (
+                    <div className="session-row" key={session.id}>
+                      <span>
+                        {session.part === 'all' ? '전체' : session.part} ·{' '}
+                        {new Intl.DateTimeFormat('ko-KR', {
+                          month: 'short',
+                          day: 'numeric',
+                        }).format(new Date(session.endedAt))}
+                      </span>
+                      <strong>
+                        {session.correctCount}/{session.questionCount}
+                      </strong>
+                      <small>{formatDuration(session.durationMs)}</small>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </>

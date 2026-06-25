@@ -1,8 +1,4 @@
 export const PARTS = [
-  'Part 1',
-  'Part 2',
-  'Part 3',
-  'Part 4',
   'Part 5',
   'Part 6',
   'Part 7',
@@ -17,7 +13,6 @@ export const MISTAKE_REASONS = [
   '전치사/접속사',
   '해석',
   '시간부족',
-  'LC못들음',
   '기타',
 ] as const
 
@@ -30,6 +25,9 @@ export type Choices = Record<ChoiceKey, string>
 export interface Question {
   id: string
   part: Part
+  passage?: string
+  groupId?: string
+  questionNumber?: string
   questionText: string
   choices: Choices
   correctAnswer: ChoiceKey
@@ -43,11 +41,21 @@ export interface Question {
   correctCount: number
   incorrectCount: number
   isMistake: boolean
+  needsReview: boolean
+  reviewLevel: number
+  reviewAttemptCount: number
+  nextReviewAt?: string
+  lastReviewedAt?: string
+  firstAttemptCorrect?: boolean
+  firstAnsweredAt?: string
   lastAnsweredAt?: string
 }
 
 export interface QuestionDraft {
   part: Part
+  passage?: string
+  groupId?: string
+  questionNumber?: string
   questionText: string
   choices: Choices
   correctAnswer: ChoiceKey
@@ -55,6 +63,17 @@ export interface QuestionDraft {
   explanation: string
   tags: string[]
   mistakeReason?: MistakeReason
+}
+
+export interface StudySession {
+  id: string
+  mode: 'exam'
+  part: Part | 'all'
+  questionCount: number
+  correctCount: number
+  startedAt: string
+  endedAt: string
+  durationMs: number
 }
 
 export type TabId = 'solve' | 'register' | 'review' | 'stats' | 'list'

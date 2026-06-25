@@ -8,21 +8,50 @@ import {
   type Part,
   type Question,
 } from '../types'
-import { downloadQuestionsCsv, parseQuestionsCsv } from '../utils/csv'
+import { downloadQuestionsCsv, parseQuestionsCsv, type CsvImportResult } from '../utils/csv'
 
 interface ListPageProps {
   questions: Question[]
   onDelete: (id: string) => void
+  onUpdate: (question: Question) => void
   onImport: (questions: Question[]) => void
 }
 
-export function ListPage({ questions, onDelete, onImport }: ListPageProps) {
+interface ImportPreview {
+  fileName: string
+  result: CsvImportResult
+  freshQuestions: Question[]
+  duplicateCount: number
+}
+
+function getQuestionSignature(question: Question): string {
+  return [
+    question.part,
+    question.passage ?? '',
+    question.questionText,
+    question.choices.A,
+    question.choices.B,
+    question.choices.C,
+    question.choices.D,
+    question.correctAnswer,
+  ]
+    .map((value) => value.trim().toLowerCase())
+    .join('|')
+}
+
+export function ListPage({ questions, onDelete, onUpdate, onImport }: ListPageProps) {
   const [partFilter, setPartFilter] = useState<Part | 'all'>('all')
   const [reasonFilter, setReasonFilter] = useState<MistakeReason | 'all'>('all')
   const [wrongOnly, setWrongOnly] = useState(false)
   const [search, setSearch] = useState('')
   const [importMessage, setImportMessage] = useState('')
+  const [importPreview, setImportPreview] = useState<ImportPreview | null>(null)
+  const [dedupeImport, setDedupeImport] = useState(true)
   const fileInputRef = useRef<HTMLInputElement>(null)
+  const existingSignatures = useMemo(
+    () => new Set(questions.map((question) => getQuestionSignature(question))),
+    [questions],
+  )
 
   const filtered = useMemo(() => {
     const keyword = search.trim().toLowerCase()
@@ -47,9 +76,26 @@ export function ListPage({ questions, onDelete, onImport }: ListPageProps) {
     if (!file) return
     try {
       const result = parseQuestionsCsv(await file.text())
-      if (result.questions.length > 0) onImport(result.questions)
+      const seen = new Set(existingSignatures)
+      const freshQuestions: Question[] = []
+      let duplicateCount = 0
+      result.questions.forEach((question) => {
+        const signature = getQuestionSignature(question)
+        if (seen.has(signature)) {
+          duplicateCount += 1
+          return
+        }
+        seen.add(signature)
+        freshQuestions.push(question)
+      })
+      setImportPreview({
+        fileName: file.name,
+        result,
+        freshQuestions,
+        duplicateCount,
+      })
       setImportMessage(
-        `${result.questions.length}\uBB38\uC81C \uAC00\uC838\uC634${
+        `${result.questions.length}\uBB38\uC81C \uBBF8\uB9AC\uBCF4\uAE30${
           result.skipped > 0 ? ` \u00B7 ${result.skipped}\uD589 \uAC74\uB108\uB700` : ''
         }`,
       )
@@ -60,6 +106,18 @@ export function ListPage({ questions, onDelete, onImport }: ListPageProps) {
       window.setTimeout(() => setImportMessage(''), 3000)
     }
   }
+
+  const confirmImport = () => {
+    if (!importPreview) return
+    const targetQuestions = dedupeImport
+      ? importPreview.freshQuestions
+      : importPreview.result.questions
+    if (targetQuestions.length > 0) onImport(targetQuestions)
+    setImportMessage(`${targetQuestions.length}\uBB38\uC81C\uB97C \uAC00\uC838\uC654\uC2B5\uB2C8\uB2E4.`)
+    setImportPreview(null)
+    window.setTimeout(() => setImportMessage(''), 3000)
+  }
+
   return (
     <section className="page-section">
       <div className="section-heading split-heading">
@@ -99,6 +157,64 @@ export function ListPage({ questions, onDelete, onImport }: ListPageProps) {
       <div className={`inline-notice ${importMessage ? 'visible' : ''}`} role="status">
         {importMessage}
       </div>
+
+      {importPreview && (
+        <div className="import-preview panel">
+          <div className="card-title-row">
+            <h3>CSV 미리보기</h3>
+            <span>{importPreview.fileName}</span>
+          </div>
+          <div className="import-summary-grid">
+            <div>
+              <span>가져올 수 있는 문제</span>
+              <strong>{importPreview.result.questions.length}</strong>
+            </div>
+            <div>
+              <span>중복 감지</span>
+              <strong>{importPreview.duplicateCount}</strong>
+            </div>
+            <div>
+              <span>건너뛴 행</span>
+              <strong>{importPreview.result.skipped}</strong>
+            </div>
+          </div>
+          {importPreview.result.skippedRows.length > 0 && (
+            <div className="skip-list">
+              {importPreview.result.skippedRows.slice(0, 5).map((row) => (
+                <span key={row.rowNumber}>
+                  {row.rowNumber}행 · {row.reason}
+                </span>
+              ))}
+            </div>
+          )}
+          <div className="preview-actions">
+            <label className="toggle-filter">
+              <input
+                type="checkbox"
+                checked={dedupeImport}
+                onChange={(event) => setDedupeImport(event.target.checked)}
+              />
+              <span>중복 제외</span>
+            </label>
+            <button className="button ghost small" type="button" onClick={() => setImportPreview(null)}>
+              취소
+            </button>
+            <button
+              className="button primary small"
+              type="button"
+              disabled={
+                dedupeImport
+                  ? importPreview.freshQuestions.length === 0
+                  : importPreview.result.questions.length === 0
+              }
+              onClick={confirmImport}
+            >
+              가져오기 확정
+            </button>
+          </div>
+        </div>
+      )}
+
       <div className="filter-panel panel">
         <label className="field search-field">
           <span className="sr-only">문제 검색</span>
@@ -160,7 +276,12 @@ export function ListPage({ questions, onDelete, onImport }: ListPageProps) {
       ) : (
         <div className="question-list">
           {filtered.map((question) => (
-            <QuestionDetails question={question} onDelete={onDelete} key={question.id} />
+            <QuestionDetails
+              question={question}
+              onDelete={onDelete}
+              onUpdate={onUpdate}
+              key={question.id}
+            />
           ))}
         </div>
       )}

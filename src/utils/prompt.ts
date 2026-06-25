@@ -9,6 +9,9 @@ export function createAnalysisPrompt(question: Question): string {
 
 [문제 정보]
 - 파트: ${question.part}
+- 세트 ID: ${question.groupId ?? '없음'}
+- 문항 번호: ${question.questionNumber ?? '없음'}
+- 지문: ${question.passage ?? '없음'}
 - 문제: ${question.questionText}
 - 선택지:
 ${choices}

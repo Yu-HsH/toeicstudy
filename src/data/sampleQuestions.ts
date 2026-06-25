@@ -4,19 +4,24 @@ import type { Question } from '../types'
 export function createSampleQuestions(): Question[] {
   return [
     draftToQuestion({
-      part: 'Part 2',
-      questionText: 'When will the design team review the new poster?',
+      part: 'Part 6',
+      groupId: 'sample-release',
+      questionNumber: '1',
+      passage:
+        'The marketing team has postponed the product launch until Friday. The public announcement must reflect the new date.',
+      questionText:
+        'The marketing team has postponed the product launch until Friday. _____, the press release will be revised before noon.',
       choices: {
-        A: 'In the small meeting room.',
-        B: 'After lunch on Wednesday.',
-        C: 'A blue background.',
-        D: 'Yes, it was reviewed.',
+        A: 'However',
+        B: 'Therefore',
+        C: 'Otherwise',
+        D: 'Similarly',
       },
       correctAnswer: 'B',
       myAnswer: 'A',
-      explanation: 'When은 시간을 묻기 때문에 일정으로 답한 B가 자연스럽습니다.',
-      tags: ['의문사', '일정'],
-      mistakeReason: 'LC못들음',
+      explanation: '출시가 연기되었기 때문에 보도자료도 수정된다는 결과 관계이므로 Therefore가 자연스럽습니다.',
+      tags: ['문장삽입', '접속부사'],
+      mistakeReason: '전치사/접속사',
     }),
     draftToQuestion({
       part: 'Part 5',

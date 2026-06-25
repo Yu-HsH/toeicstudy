@@ -9,7 +9,7 @@ import {
   type Question,
 } from '../types'
 
-const CSV_HEADERS = [
+const CSV_REQUIRED_HEADERS = [
   'part',
   'questionText',
   'choiceA',
@@ -22,6 +22,9 @@ const CSV_HEADERS = [
   'tags',
   'mistakeReason',
 ] as const
+
+const CSV_OPTIONAL_HEADERS = ['passage', 'groupId', 'questionNumber'] as const
+const CSV_HEADERS = [...CSV_REQUIRED_HEADERS, ...CSV_OPTIONAL_HEADERS] as const
 
 function escapeCell(value: string): string {
   if (/[",\r\n]/.test(value)) return `"${value.replaceAll('"', '""')}"`
@@ -41,6 +44,9 @@ export function questionsToCsv(questions: Question[]): string {
     question.explanation,
     question.tags.join('|'),
     question.mistakeReason ?? '',
+    question.passage ?? '',
+    question.groupId ?? '',
+    question.questionNumber ?? '',
   ])
   return `\uFEFF${[CSV_HEADERS, ...rows]
     .map((row) => row.map((cell) => escapeCell(cell)).join(','))
@@ -95,45 +101,89 @@ function parseRows(csv: string): string[][] {
 export interface CsvImportResult {
   questions: Question[]
   skipped: number
+  skippedRows: {
+    rowNumber: number
+    reason: string
+  }[]
+}
+
+function getRowError({
+  part,
+  correctAnswer,
+  myAnswerValue,
+  mistakeReasonValue,
+  questionText,
+  choices,
+}: {
+  part: string
+  correctAnswer: string
+  myAnswerValue: string
+  mistakeReasonValue: string
+  questionText: string
+  choices: string[]
+}): string | null {
+  if (!PARTS.includes(part as Part)) return '지원하지 않는 파트입니다.'
+  if (!CHOICE_KEYS.includes(correctAnswer as ChoiceKey)) return '정답 값이 A~D가 아닙니다.'
+  if (!questionText) return '문제 내용이 비어 있습니다.'
+  if (choices.some((choice) => !choice)) return '선택지 A~D 중 빈 값이 있습니다.'
+  if (myAnswerValue && !CHOICE_KEYS.includes(myAnswerValue as ChoiceKey)) {
+    return '내 답 값이 A~D가 아닙니다.'
+  }
+  if (
+    mistakeReasonValue &&
+    !MISTAKE_REASONS.includes(mistakeReasonValue as MistakeReason)
+  ) {
+    return '틀린 이유 값이 지원 목록에 없습니다.'
+  }
+  return null
 }
 
 export function parseQuestionsCsv(csv: string): CsvImportResult {
   const rows = parseRows(csv.replace(/^\uFEFF/, ''))
-  if (rows.length === 0) return { questions: [], skipped: 0 }
+  if (rows.length === 0) return { questions: [], skipped: 0, skippedRows: [] }
 
   const headers = rows[0].map((header) => header.trim())
   const indexes = Object.fromEntries(headers.map((header, index) => [header, index]))
-  const hasHeaders = CSV_HEADERS.every((header) => indexes[header] !== undefined)
+  const hasHeaders = CSV_REQUIRED_HEADERS.every((header) => indexes[header] !== undefined)
   if (!hasHeaders) {
     throw new Error('CSV 헤더 형식이 올바르지 않습니다.')
   }
 
   const imported: Question[] = []
-  let skipped = 0
-  for (const row of rows.slice(1)) {
+  const skippedRows: CsvImportResult['skippedRows'] = []
+  for (const [rowIndex, row] of rows.slice(1).entries()) {
     const get = (header: (typeof CSV_HEADERS)[number]): string =>
       (row[indexes[header]] ?? '').trim()
     const part = get('part') as Part
     const correctAnswer = get('correctAnswer') as ChoiceKey
     const myAnswerValue = get('myAnswer')
     const mistakeReasonValue = get('mistakeReason')
+    const choices = [
+      get('choiceA'),
+      get('choiceB'),
+      get('choiceC'),
+      get('choiceD'),
+    ]
+    const rowError = getRowError({
+      part,
+      correctAnswer,
+      myAnswerValue,
+      mistakeReasonValue,
+      questionText: get('questionText'),
+      choices,
+    })
 
-    if (
-      !PARTS.includes(part) ||
-      !CHOICE_KEYS.includes(correctAnswer) ||
-      !get('questionText') ||
-      CHOICE_KEYS.some((key) => !get(`choice${key}` as 'choiceA')) ||
-      (myAnswerValue && !CHOICE_KEYS.includes(myAnswerValue as ChoiceKey)) ||
-      (mistakeReasonValue &&
-        !MISTAKE_REASONS.includes(mistakeReasonValue as MistakeReason))
-    ) {
-      skipped += 1
+    if (rowError) {
+      skippedRows.push({ rowNumber: rowIndex + 2, reason: rowError })
       continue
     }
 
     imported.push(
       draftToQuestion({
         part,
+        passage: get('passage') || undefined,
+        groupId: get('groupId') || undefined,
+        questionNumber: get('questionNumber') || undefined,
         questionText: get('questionText'),
         choices: {
           A: get('choiceA'),
@@ -154,5 +204,5 @@ export function parseQuestionsCsv(csv: string): CsvImportResult {
       }),
     )
   }
-  return { questions: imported, skipped }
+  return { questions: imported, skipped: skippedRows.length, skippedRows }
 }

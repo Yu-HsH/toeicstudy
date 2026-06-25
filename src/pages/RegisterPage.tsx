@@ -18,6 +18,9 @@ const emptyChoices = { A: '', B: '', C: '', D: '' }
 
 export function RegisterPage({ onAdd, onAddSamples }: RegisterPageProps) {
   const [part, setPart] = useState<Part>('Part 5')
+  const [passage, setPassage] = useState('')
+  const [groupId, setGroupId] = useState('')
+  const [questionNumber, setQuestionNumber] = useState('')
   const [questionText, setQuestionText] = useState('')
   const [choices, setChoices] = useState({ ...emptyChoices })
   const [correctAnswer, setCorrectAnswer] = useState<ChoiceKey>('A')
@@ -29,6 +32,9 @@ export function RegisterPage({ onAdd, onAddSamples }: RegisterPageProps) {
 
   const reset = () => {
     setQuestionText('')
+    setPassage('')
+    setGroupId('')
+    setQuestionNumber('')
     setChoices({ ...emptyChoices })
     setCorrectAnswer('A')
     setMyAnswer('')
@@ -41,6 +47,9 @@ export function RegisterPage({ onAdd, onAddSamples }: RegisterPageProps) {
     event.preventDefault()
     onAdd({
       part,
+      passage: passage.trim() || undefined,
+      groupId: groupId.trim() || undefined,
+      questionNumber: questionNumber.trim() || undefined,
       questionText: questionText.trim(),
       choices,
       correctAnswer,
@@ -90,6 +99,35 @@ export function RegisterPage({ onAdd, onAddSamples }: RegisterPageProps) {
                 <option key={key}>{key}</option>
               ))}
             </select>
+          </label>
+        </div>
+
+        <label className="field">
+          <span>지문 (Part 6/7 선택)</span>
+          <textarea
+            rows={4}
+            placeholder="같은 지문에 묶인 문제라면 여기에 지문을 입력하세요."
+            value={passage}
+            onChange={(event) => setPassage(event.target.value)}
+          />
+        </label>
+
+        <div className="field-row two-columns">
+          <label className="field">
+            <span>세트 ID (선택)</span>
+            <input
+              placeholder="예: notice-001"
+              value={groupId}
+              onChange={(event) => setGroupId(event.target.value)}
+            />
+          </label>
+          <label className="field">
+            <span>문항 번호 (선택)</span>
+            <input
+              placeholder="예: 147"
+              value={questionNumber}
+              onChange={(event) => setQuestionNumber(event.target.value)}
+            />
           </label>
         </div>
 

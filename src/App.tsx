@@ -4,12 +4,22 @@ import { ListPage } from './pages/ListPage'
 import { RegisterPage } from './pages/RegisterPage'
 import { SolvePage } from './pages/SolvePage'
 import { StatsPage } from './pages/StatsPage'
-import { draftToQuestion, loadQuestions, recordAnswer, saveQuestions } from './storage'
+import {
+  createStudySession,
+  draftToQuestion,
+  isReviewDue,
+  loadQuestions,
+  loadStudySessions,
+  recordAnswer,
+  saveQuestions,
+  saveStudySessions,
+} from './storage'
 import type {
   ChoiceKey,
   MistakeReason,
   Question,
   QuestionDraft,
+  StudySession,
   TabId,
 } from './types'
 
@@ -23,6 +33,7 @@ const TABS: { id: TabId; label: string; icon: string }[] = [
 
 function App() {
   const [questions, setQuestions] = useState<Question[]>(loadQuestions)
+  const [sessions, setSessions] = useState<StudySession[]>(loadStudySessions)
   const [activeTab, setActiveTab] = useState<TabId>('solve')
   const [notice, setNotice] = useState('')
 
@@ -30,8 +41,12 @@ function App() {
     saveQuestions(questions)
   }, [questions])
 
+  useEffect(() => {
+    saveStudySessions(sessions)
+  }, [sessions])
+
   const mistakeCount = useMemo(
-    () => questions.filter((question) => question.isMistake).length,
+    () => questions.filter((question) => isReviewDue(question)).length,
     [questions],
   )
 
@@ -43,6 +58,13 @@ function App() {
   const addQuestion = (draft: QuestionDraft) => {
     setQuestions((current) => [draftToQuestion(draft), ...current])
     showNotice('문제를 저장했습니다.')
+  }
+
+  const updateQuestion = (updated: Question) => {
+    setQuestions((current) =>
+      current.map((question) => (question.id === updated.id ? updated : question)),
+    )
+    showNotice('문제를 수정했습니다.')
   }
 
   const addSamples = () => {
@@ -81,6 +103,10 @@ function App() {
   const importQuestions = (imported: Question[]) => {
     setQuestions((current) => [...imported, ...current])
     showNotice(`${imported.length}\uBB38\uC81C\uB97C CSV\uC5D0\uC11C \uAC00\uC838\uC654\uC2B5\uB2C8\uB2E4.`)
+  }
+
+  const addSession = (session: Omit<StudySession, 'id'>) => {
+    setSessions((current) => [createStudySession(session), ...current].slice(0, 100))
   }
 
   return (
@@ -126,6 +152,7 @@ function App() {
           <SolvePage
             questions={questions}
             onAnswer={answerQuestion}
+            onSessionComplete={addSession}
             onGoRegister={() => setActiveTab('register')}
           />
         )}
@@ -137,14 +164,16 @@ function App() {
             questions={questions}
             isReview
             onAnswer={answerQuestion}
+            onSessionComplete={addSession}
             onGoRegister={() => setActiveTab('register')}
           />
         )}
-        {activeTab === 'stats' && <StatsPage questions={questions} />}
+        {activeTab === 'stats' && <StatsPage questions={questions} sessions={sessions} />}
         {activeTab === 'list' && (
           <ListPage
             questions={questions}
             onDelete={deleteQuestion}
+            onUpdate={updateQuestion}
             onImport={importQuestions}
           />
         )}
