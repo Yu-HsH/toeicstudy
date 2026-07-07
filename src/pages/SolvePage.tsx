@@ -39,6 +39,20 @@ function shuffleItems<T>(items: T[]): T[] {
   return shuffled
 }
 
+function makeShuffleSeed(): string {
+  return `${Date.now()}-${Math.random().toString(16).slice(2)}`
+}
+
+function getStableShuffleScore(seed: string, value: string): number {
+  let hash = 2166136261
+  const input = `${seed}:${value}`
+  for (let index = 0; index < input.length; index += 1) {
+    hash ^= input.charCodeAt(index)
+    hash = Math.imul(hash, 16777619)
+  }
+  return hash >>> 0
+}
+
 function getCountOptions(total: number): number[] {
   if (total <= 0) return []
   return [...EXAM_COUNT_OPTIONS.filter((option) => option < total), total]
@@ -48,12 +62,21 @@ function getQuestionGroupKey(question: Question): string {
   return question.groupId || question.passage || question.id
 }
 
-function shuffleQuestionGroups(questions: Question[]): Question[] {
+function shuffleQuestionGroups(questions: Question[], seed?: string): Question[] {
   const groups = new Map<string, Question[]>()
   questions.forEach((question) => {
     const key = getQuestionGroupKey(question)
     groups.set(key, [...(groups.get(key) ?? []), question])
   })
+  if (seed) {
+    return [...groups.entries()]
+      .sort(([leftKey], [rightKey]) => {
+        const leftScore = getStableShuffleScore(seed, leftKey)
+        const rightScore = getStableShuffleScore(seed, rightKey)
+        return leftScore === rightScore ? leftKey.localeCompare(rightKey) : leftScore - rightScore
+      })
+      .flatMap(([, group]) => group)
+  }
   return shuffleItems([...groups.values()]).flat()
 }
 
@@ -77,6 +100,7 @@ export function SolvePage({
     [questions, isReview],
   )
   const [practicePart, setPracticePart] = useState<PartFilter>('all')
+  const [practiceShuffleSeed, setPracticeShuffleSeed] = useState(makeShuffleSeed)
   const [index, setIndex] = useState(0)
   const [selected, setSelected] = useState<ChoiceKey | null>(null)
   const [reason, setReason] = useState<MistakeReason | ''>('')
@@ -93,11 +117,13 @@ export function SolvePage({
   const [nowMs, setNowMs] = useState(Date.now())
 
   const studyQuestions = useMemo(
-    () =>
-      baseStudyQuestions.filter(
+    () => {
+      const filtered = baseStudyQuestions.filter(
         (question) => practicePart === 'all' || question.part === practicePart,
-      ),
-    [baseStudyQuestions, practicePart],
+      )
+      return shuffleQuestionGroups(filtered, practiceShuffleSeed)
+    },
+    [baseStudyQuestions, practicePart, practiceShuffleSeed],
   )
   const current = studyQuestions[index % Math.max(studyQuestions.length, 1)]
   const isCorrect = selected === current?.correctAnswer
@@ -213,6 +239,9 @@ export function SolvePage({
   const handleNext = () => {
     if (!selected || (!isCorrect && !reason)) return
     onAnswer(current.id, selected, reason || undefined, isReview)
+    if (index >= studyQuestions.length - 1) {
+      setPracticeShuffleSeed(makeShuffleSeed())
+    }
     setIndex((currentIndex) => (currentIndex + 1) % studyQuestions.length)
     setSelected(null)
     setReason('')
@@ -220,6 +249,7 @@ export function SolvePage({
 
   const selectPracticePart = (part: PartFilter) => {
     setPracticePart(part)
+    setPracticeShuffleSeed(makeShuffleSeed())
     setIndex(0)
     setSelected(null)
     setReason('')
@@ -283,7 +313,7 @@ export function SolvePage({
       .filter((result) => !result.isCorrect)
       .map((result) => result.question)
     if (wrongQuestions.length === 0) return
-    setExamQuestions(wrongQuestions)
+    setExamQuestions(shuffleQuestionGroups(wrongQuestions))
     setExamAnswers({})
     setExamWrongReasons({})
     setExamSubmitted(false)
@@ -295,7 +325,11 @@ export function SolvePage({
 
   const changeMode = (nextMode: SolveMode) => {
     setMode(nextMode)
-    if (nextMode === 'practice') resetExamSession()
+    if (nextMode === 'practice') {
+      resetExamSession()
+      setPracticeShuffleSeed(makeShuffleSeed())
+      setIndex(0)
+    }
   }
 
   const renderPracticePartPicker = () => (
