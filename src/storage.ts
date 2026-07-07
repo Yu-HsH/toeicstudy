@@ -33,6 +33,16 @@ function normalizeText(value: unknown): string | undefined {
   return typeof value === 'string' && value.trim() ? value.trim() : undefined
 }
 
+function normalizeNumber(value: unknown, fallback = 0): number {
+  return typeof value === 'number' && Number.isFinite(value) ? Math.max(0, value) : fallback
+}
+
+function normalizeOptionalNumber(value: unknown): number | undefined {
+  return typeof value === 'number' && Number.isFinite(value) && value >= 0
+    ? Math.round(value)
+    : undefined
+}
+
 function addDays(date: Date, days: number): string {
   const next = new Date(date)
   next.setDate(next.getDate() + days)
@@ -83,6 +93,11 @@ function normalizeQuestion(question: Partial<Question>): Question | null {
     needsReview,
     reviewLevel: question.reviewLevel ?? 0,
     reviewAttemptCount: question.reviewAttemptCount ?? 0,
+    timedAttemptCount: normalizeNumber(question.timedAttemptCount),
+    totalSolveTimeMs: normalizeNumber(question.totalSolveTimeMs),
+    lastSolveTimeMs: normalizeOptionalNumber(question.lastSolveTimeMs),
+    fastestSolveTimeMs: normalizeOptionalNumber(question.fastestSolveTimeMs),
+    slowestSolveTimeMs: normalizeOptionalNumber(question.slowestSolveTimeMs),
     nextReviewAt: question.nextReviewAt ?? (needsReview ? question.lastAnsweredAt : undefined),
     lastReviewedAt: question.lastReviewedAt,
     firstAttemptCorrect:
@@ -130,6 +145,8 @@ export function draftToQuestion(draft: QuestionDraft): Question {
     needsReview: isMistake,
     reviewLevel: 0,
     reviewAttemptCount: 0,
+    timedAttemptCount: 0,
+    totalSolveTimeMs: 0,
     nextReviewAt: isMistake ? createdAt : undefined,
     firstAttemptCorrect: draft.myAnswer ? isCorrect : undefined,
     firstAnsweredAt: draft.myAnswer ? createdAt : undefined,
@@ -142,10 +159,32 @@ export function recordAnswer(
   answer: ChoiceKey,
   mistakeReason: MistakeReason | undefined,
   isReview: boolean,
+  solveTimeMs?: number,
 ): Question {
   const isCorrect = answer === question.correctAnswer
   const answeredAt = new Date()
   const answeredAtIso = answeredAt.toISOString()
+  const normalizedSolveTimeMs = normalizeOptionalNumber(solveTimeMs)
+  const timedAttemptCount =
+    normalizedSolveTimeMs === undefined
+      ? question.timedAttemptCount
+      : question.timedAttemptCount + 1
+  const totalSolveTimeMs =
+    normalizedSolveTimeMs === undefined
+      ? question.totalSolveTimeMs
+      : question.totalSolveTimeMs + normalizedSolveTimeMs
+  const fastestSolveTimeMs =
+    normalizedSolveTimeMs === undefined
+      ? question.fastestSolveTimeMs
+      : question.fastestSolveTimeMs === undefined
+        ? normalizedSolveTimeMs
+        : Math.min(question.fastestSolveTimeMs, normalizedSolveTimeMs)
+  const slowestSolveTimeMs =
+    normalizedSolveTimeMs === undefined
+      ? question.slowestSolveTimeMs
+      : question.slowestSolveTimeMs === undefined
+        ? normalizedSolveTimeMs
+        : Math.max(question.slowestSolveTimeMs, normalizedSolveTimeMs)
   const nextReviewLevel = isReview && isCorrect ? question.reviewLevel + 1 : 0
   const graduated = isReview && isCorrect && nextReviewLevel >= REVIEW_GRADUATION_LEVEL
   const needsReview = isCorrect
@@ -171,6 +210,11 @@ export function recordAnswer(
     needsReview,
     reviewLevel: isCorrect && isReview ? nextReviewLevel : isCorrect ? question.reviewLevel : 0,
     reviewAttemptCount: question.reviewAttemptCount + (isReview ? 1 : 0),
+    timedAttemptCount,
+    totalSolveTimeMs,
+    lastSolveTimeMs: normalizedSolveTimeMs ?? question.lastSolveTimeMs,
+    fastestSolveTimeMs,
+    slowestSolveTimeMs,
     nextReviewAt: needsReview ? nextReviewAt : undefined,
     reviewedCount: question.reviewedCount + (isReview && isCorrect ? 1 : 0),
     lastReviewedAt: isReview ? answeredAtIso : question.lastReviewedAt,

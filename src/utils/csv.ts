@@ -23,7 +23,16 @@ const CSV_REQUIRED_HEADERS = [
   'mistakeReason',
 ] as const
 
-const CSV_OPTIONAL_HEADERS = ['passage', 'groupId', 'questionNumber'] as const
+const CSV_OPTIONAL_HEADERS = [
+  'passage',
+  'groupId',
+  'questionNumber',
+  'timedAttemptCount',
+  'totalSolveTimeMs',
+  'lastSolveTimeMs',
+  'fastestSolveTimeMs',
+  'slowestSolveTimeMs',
+] as const
 const CSV_HEADERS = [...CSV_REQUIRED_HEADERS, ...CSV_OPTIONAL_HEADERS] as const
 
 function escapeCell(value: string): string {
@@ -47,6 +56,11 @@ export function questionsToCsv(questions: Question[]): string {
     question.passage ?? '',
     question.groupId ?? '',
     question.questionNumber ?? '',
+    String(question.timedAttemptCount),
+    String(question.totalSolveTimeMs),
+    question.lastSolveTimeMs === undefined ? '' : String(question.lastSolveTimeMs),
+    question.fastestSolveTimeMs === undefined ? '' : String(question.fastestSolveTimeMs),
+    question.slowestSolveTimeMs === undefined ? '' : String(question.slowestSolveTimeMs),
   ])
   return `\uFEFF${[CSV_HEADERS, ...rows]
     .map((row) => row.map((cell) => escapeCell(cell)).join(','))
@@ -138,6 +152,12 @@ function getRowError({
   return null
 }
 
+function parseOptionalNonNegativeInteger(value: string): number | undefined {
+  if (!value) return undefined
+  const parsed = Number(value)
+  return Number.isFinite(parsed) && parsed >= 0 ? Math.round(parsed) : undefined
+}
+
 export function parseQuestionsCsv(csv: string): CsvImportResult {
   const rows = parseRows(csv.replace(/^\uFEFF/, ''))
   if (rows.length === 0) return { questions: [], skipped: 0, skippedRows: [] }
@@ -178,31 +198,41 @@ export function parseQuestionsCsv(csv: string): CsvImportResult {
       continue
     }
 
-    imported.push(
-      draftToQuestion({
-        part,
-        passage: get('passage') || undefined,
-        groupId: get('groupId') || undefined,
-        questionNumber: get('questionNumber') || undefined,
-        questionText: get('questionText'),
-        choices: {
-          A: get('choiceA'),
-          B: get('choiceB'),
-          C: get('choiceC'),
-          D: get('choiceD'),
-        },
-        correctAnswer,
-        myAnswer: myAnswerValue ? (myAnswerValue as ChoiceKey) : undefined,
-        explanation: get('explanation'),
-        tags: get('tags')
-          .split('|')
-          .map((tag) => tag.trim())
-          .filter(Boolean),
-        mistakeReason: mistakeReasonValue
-          ? (mistakeReasonValue as MistakeReason)
-          : undefined,
-      }),
-    )
+    const question = draftToQuestion({
+      part,
+      passage: get('passage') || undefined,
+      groupId: get('groupId') || undefined,
+      questionNumber: get('questionNumber') || undefined,
+      questionText: get('questionText'),
+      choices: {
+        A: get('choiceA'),
+        B: get('choiceB'),
+        C: get('choiceC'),
+        D: get('choiceD'),
+      },
+      correctAnswer,
+      myAnswer: myAnswerValue ? (myAnswerValue as ChoiceKey) : undefined,
+      explanation: get('explanation'),
+      tags: get('tags')
+        .split('|')
+        .map((tag) => tag.trim())
+        .filter(Boolean),
+      mistakeReason: mistakeReasonValue ? (mistakeReasonValue as MistakeReason) : undefined,
+    })
+    const timedAttemptCount = parseOptionalNonNegativeInteger(get('timedAttemptCount'))
+    const totalSolveTimeMs = parseOptionalNonNegativeInteger(get('totalSolveTimeMs'))
+    const lastSolveTimeMs = parseOptionalNonNegativeInteger(get('lastSolveTimeMs'))
+    const fastestSolveTimeMs = parseOptionalNonNegativeInteger(get('fastestSolveTimeMs'))
+    const slowestSolveTimeMs = parseOptionalNonNegativeInteger(get('slowestSolveTimeMs'))
+
+    imported.push({
+      ...question,
+      timedAttemptCount: timedAttemptCount ?? question.timedAttemptCount,
+      totalSolveTimeMs: totalSolveTimeMs ?? question.totalSolveTimeMs,
+      lastSolveTimeMs,
+      fastestSolveTimeMs,
+      slowestSolveTimeMs,
+    })
   }
   return { questions: imported, skipped: skippedRows.length, skippedRows }
 }

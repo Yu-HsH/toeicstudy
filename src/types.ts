@@ -44,6 +44,11 @@ export interface Question {
   needsReview: boolean
   reviewLevel: number
   reviewAttemptCount: number
+  timedAttemptCount: number
+  totalSolveTimeMs: number
+  lastSolveTimeMs?: number
+  fastestSolveTimeMs?: number
+  slowestSolveTimeMs?: number
   nextReviewAt?: string
   lastReviewedAt?: string
   firstAttemptCorrect?: boolean
@@ -76,4 +81,4 @@ export interface StudySession {
   durationMs: number
 }
 
-export type TabId = 'solve' | 'register' | 'review' | 'vocab' | 'stats' | 'list'
+export type TabId = 'dashboard' | 'solve' | 'register' | 'review' | 'vocab' | 'stats' | 'list'

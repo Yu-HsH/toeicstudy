@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { createSampleQuestions } from './data/sampleQuestions'
+import { DashboardPage } from './pages/DashboardPage'
 import { ListPage } from './pages/ListPage'
 import { RegisterPage } from './pages/RegisterPage'
 import { SolvePage } from './pages/SolvePage'
@@ -30,6 +31,7 @@ import type {
 } from './types'
 
 const TABS: { id: TabId; label: string; icon: string }[] = [
+  { id: 'dashboard', label: '오늘', icon: '◎' },
   { id: 'solve', label: '문제 풀기', icon: '▶' },
   { id: 'register', label: '문제 등록', icon: '＋' },
   { id: 'review', label: '오답 복습', icon: '↻' },
@@ -42,7 +44,7 @@ function App() {
   const [questions, setQuestions] = useState<Question[]>(loadQuestions)
   const [sessions, setSessions] = useState<StudySession[]>(loadStudySessions)
   const [vocabularyProgress, setVocabularyProgress] = useState(loadVocabularyProgress)
-  const [activeTab, setActiveTab] = useState<TabId>('solve')
+  const [activeTab, setActiveTab] = useState<TabId>('dashboard')
   const [notice, setNotice] = useState('')
 
   useEffect(() => {
@@ -102,10 +104,13 @@ function App() {
     answer: ChoiceKey,
     reason: MistakeReason | undefined,
     isReview: boolean,
+    solveTimeMs?: number,
   ) => {
     setQuestions((current) =>
       current.map((question) =>
-        question.id === id ? recordAnswer(question, answer, reason, isReview) : question,
+        question.id === id
+          ? recordAnswer(question, answer, reason, isReview, solveTimeMs)
+          : question,
       ),
     )
   }
@@ -170,6 +175,14 @@ function App() {
       </nav>
 
       <main className="app-main">
+        {activeTab === 'dashboard' && (
+          <DashboardPage
+            questions={questions}
+            sessions={sessions}
+            vocabularySummary={vocabularySummary}
+            onNavigate={setActiveTab}
+          />
+        )}
         {activeTab === 'solve' && (
           <SolvePage
             questions={questions}

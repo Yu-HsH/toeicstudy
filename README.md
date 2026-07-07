@@ -10,8 +10,10 @@ SSAFY와 병행하며 한 달 동안 직접 입력한 TOEIC 문제와 오답을 
 
 ## 주요 기능
 
-- Part 1~7 문제 등록 및 A/B/C/D 선택지, 해설, 태그, 틀린 이유 기록
+- 오늘 풀이/오답/단어/문제 은행 상태를 한눈에 보는 대시보드
+- Part 5~7 문제 등록 및 A/B/C/D 선택지, 해설, 태그, 틀린 이유 기록
 - 전체 문제 풀이와 즉시 정답 확인
+- 문제별 최근/평균/최단/최장 풀이 시간 기록
 - 누적 오답만 다시 푸는 복습 모드 및 복습 정답 횟수 기록
 - 파트·오답 여부·틀린 이유·검색어 기반 문제 필터
 - 전체 문항, 누적 풀이 정답률, 최근 7일 등록 수, 오답 분포 통계
@@ -39,12 +41,13 @@ npm run preview
 
 ## 사용 방법
 
-1. **문제 등록** 탭에서 문제, 네 선택지, 정답을 입력합니다. 이미 풀었던 문제라면 내 답과 틀린 이유도 함께 기록할 수 있습니다.
-2. 처음 둘러볼 때는 **샘플 3문제 추가**를 눌러 저작권 문제가 없는 예시 데이터를 넣을 수 있습니다. 같은 샘플은 중복 추가되지 않습니다.
-3. **문제 풀기**에서 답을 누르면 정답과 해설이 표시됩니다. 틀렸다면 이유를 선택해야 결과를 저장할 수 있습니다.
-4. **오답 복습**에서 누적 오답만 다시 풉니다. 다시 맞힐 때마다 해당 문제의 `reviewedCount`가 증가합니다.
-5. **통계**에서 누적 풀이 기준 정답률과 오답 분포를 확인합니다.
-6. **문제 목록**에서 상세 내용을 보고, **분석 프롬프트 복사**로 ChatGPT에 붙여넣을 문장을 만듭니다.
+1. **오늘** 탭에서 오늘 풀 문제 수, 오답 복습 수, 단어 복습 수를 먼저 확인합니다.
+2. **문제 등록** 탭에서 문제, 네 선택지, 정답을 입력합니다. 이미 풀었던 문제라면 내 답과 틀린 이유도 함께 기록할 수 있습니다.
+3. 처음 둘러볼 때는 **샘플 3문제 추가**를 눌러 저작권 문제가 없는 예시 데이터를 넣을 수 있습니다. 같은 샘플은 중복 추가되지 않습니다.
+4. **문제 풀기**에서 답을 누르면 정답과 해설이 표시됩니다. 틀렸다면 이유를 선택해야 결과를 저장할 수 있습니다.
+5. **오답 복습**에서 누적 오답만 다시 풉니다. 다시 맞힐 때마다 해당 문제의 `reviewedCount`가 증가합니다.
+6. **통계**에서 누적 풀이 기준 정답률과 오답 분포를 확인합니다.
+7. **문제 목록**에서 상세 내용을 보고, **분석 프롬프트 복사**로 ChatGPT에 붙여넣을 문장을 만듭니다.
 
 ## CSV 백업과 복원
 
@@ -53,16 +56,17 @@ npm run preview
 CSV 헤더는 다음 순서를 사용합니다.
 
 ```text
-part,questionText,choiceA,choiceB,choiceC,choiceD,correctAnswer,myAnswer,explanation,tags,mistakeReason
+part,questionText,choiceA,choiceB,choiceC,choiceD,correctAnswer,myAnswer,explanation,tags,mistakeReason,passage,groupId,questionNumber,timedAttemptCount,totalSolveTimeMs,lastSolveTimeMs,fastestSolveTimeMs,slowestSolveTimeMs
 ```
 
-- `part`: `Part 1` ~ `Part 7`
+- `part`: `Part 5` ~ `Part 7`
 - `correctAnswer`, `myAnswer`: `A`, `B`, `C`, `D` (`myAnswer`는 빈 값 가능)
 - `tags`: 여러 태그를 `|`로 구분
-- `mistakeReason`: 단어, 품사, 문법, 전치사/접속사, 해석, 시간부족, LC못들음, 기타
+- `mistakeReason`: 단어, 품사, 문법, 전치사/접속사, 해석, 시간부족, 기타
+- `timedAttemptCount`, `totalSolveTimeMs`, `lastSolveTimeMs`, `fastestSolveTimeMs`, `slowestSolveTimeMs`: 풀이 시간 백업용 선택 필드입니다.
 - 필수 값이나 형식이 잘못된 행은 가져오기에서 건너뜁니다.
 
-CSV에는 문제 내용과 학습 메모가 포함되므로 개인용으로 보관하세요. CSV가 보존하는 필드는 요구된 교환 필드이며, 누적 풀이 횟수는 새 브라우저에서 다시 시작됩니다.
+CSV에는 문제 내용과 학습 메모가 포함되므로 개인용으로 보관하세요. CSV가 보존하는 필드는 요구된 교환 필드와 풀이 시간 백업 필드이며, 정답/오답 누적 횟수는 새 브라우저에서 다시 시작됩니다.
 
 ## 데이터 저장과 초기화
 

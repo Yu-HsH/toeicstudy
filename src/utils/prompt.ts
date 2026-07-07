@@ -1,6 +1,8 @@
 import type { Question } from '../types'
+import { formatDuration, getQuestionAverageSolveTimeMs } from './time'
 
 export function createAnalysisPrompt(question: Question): string {
+  const averageSolveTimeMs = getQuestionAverageSolveTimeMs(question)
   const choices = Object.entries(question.choices)
     .map(([key, value]) => `${key}. ${value}`)
     .join('\n')
@@ -20,6 +22,12 @@ ${choices}
 - 내가 기록한 해설: ${question.explanation || '없음'}
 - 틀린 이유: ${question.mistakeReason ?? '미분류'}
 - 태그: ${question.tags.join(', ') || '없음'}
+- 최근 풀이 시간: ${
+    question.lastSolveTimeMs === undefined ? '기록 없음' : formatDuration(question.lastSolveTimeMs)
+  }
+- 평균 풀이 시간: ${
+    averageSolveTimeMs === undefined ? '기록 없음' : formatDuration(averageSolveTimeMs)
+  }
 
 [분석 요청]
 1. 왜 정답이 맞는지 핵심 근거를 설명해 주세요.

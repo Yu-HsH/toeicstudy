@@ -9,6 +9,7 @@ import {
   type Question,
 } from '../types'
 import { copyAnalysisPrompt } from '../utils/prompt'
+import { formatDuration, getQuestionAverageSolveTimeMs } from '../utils/time'
 
 interface QuestionDetailsProps {
   question: Question
@@ -18,6 +19,7 @@ interface QuestionDetailsProps {
 
 export function QuestionDetails({ question, onDelete, onUpdate }: QuestionDetailsProps) {
   const [copyLabel, setCopyLabel] = useState('분석 프롬프트 복사')
+  const averageSolveTimeMs = getQuestionAverageSolveTimeMs(question)
   const [editing, setEditing] = useState(false)
   const [part, setPart] = useState<Part>(question.part)
   const [passage, setPassage] = useState(question.passage ?? '')
@@ -141,6 +143,22 @@ export function QuestionDetails({ question, onDelete, onUpdate }: QuestionDetail
             </span>
           ))}
           <span className="review-count">복습 정답 {question.reviewedCount}회</span>
+          {question.lastSolveTimeMs !== undefined && (
+            <span className="time-badge">최근 {formatDuration(question.lastSolveTimeMs)}</span>
+          )}
+          {averageSolveTimeMs !== undefined && (
+            <span className="time-badge">평균 {formatDuration(averageSolveTimeMs)}</span>
+          )}
+          {question.fastestSolveTimeMs !== undefined && (
+            <span className="time-badge">
+              최단 {formatDuration(question.fastestSolveTimeMs)}
+            </span>
+          )}
+          {question.slowestSolveTimeMs !== undefined && (
+            <span className="time-badge">
+              최장 {formatDuration(question.slowestSolveTimeMs)}
+            </span>
+          )}
         </div>
         <div className="button-row">
           {onUpdate && (

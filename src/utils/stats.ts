@@ -1,11 +1,19 @@
 import { isReviewDue } from '../storage'
 import { MISTAKE_REASONS, PARTS, type Question, type StudySession } from '../types'
+import { getQuestionAverageSolveTimeMs } from './time'
+
+function getQuestionLabel(question: Question): string {
+  const number = question.questionNumber ? ` #${question.questionNumber}` : ''
+  return `${question.part}${number} ${question.questionText}`.slice(0, 34)
+}
 
 export function getQuestionStats(questions: Question[], sessions: StudySession[] = []) {
   const attemptCount = questions.reduce((sum, item) => sum + item.attemptCount, 0)
   const correctCount = questions.reduce((sum, item) => sum + item.correctCount, 0)
   const reviewAttemptCount = questions.reduce((sum, item) => sum + item.reviewAttemptCount, 0)
   const reviewCorrectCount = questions.reduce((sum, item) => sum + item.reviewedCount, 0)
+  const timedAttemptCount = questions.reduce((sum, item) => sum + item.timedAttemptCount, 0)
+  const totalSolveTimeMs = questions.reduce((sum, item) => sum + item.totalSolveTimeMs, 0)
   const firstAnswered = questions.filter((item) => item.firstAttemptCorrect !== undefined)
   const firstCorrect = firstAnswered.filter((item) => item.firstAttemptCorrect).length
   const sevenDaysAgo = Date.now() - 7 * 24 * 60 * 60 * 1000
@@ -36,6 +44,9 @@ export function getQuestionStats(questions: Question[], sessions: StudySession[]
       reviewAttemptCount === 0
         ? 0
         : Math.round((reviewCorrectCount / reviewAttemptCount) * 100),
+    averageSolveTimeMs:
+      timedAttemptCount === 0 ? 0 : Math.round(totalSolveTimeMs / timedAttemptCount),
+    timedAttemptCount,
     recentSessionAccuracy:
       recentSessionQuestions === 0
         ? 0
@@ -65,6 +76,14 @@ export function getQuestionStats(questions: Question[], sessions: StudySession[]
     })),
     tagMistakes: [...tagMap.entries()]
       .map(([label, value]) => ({ label, value }))
+      .sort((a, b) => b.value - a.value)
+      .slice(0, 8),
+    slowQuestions: questions
+      .map((question) => ({
+        label: getQuestionLabel(question),
+        value: getQuestionAverageSolveTimeMs(question) ?? 0,
+      }))
+      .filter((item) => item.value > 0)
       .sort((a, b) => b.value - a.value)
       .slice(0, 8),
   }

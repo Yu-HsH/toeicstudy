@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState, type ReactNode } from 'react'
 import { EmptyState } from '../components/EmptyState'
 import { isReviewDue } from '../storage'
+import { formatDuration } from '../utils/time'
 import {
   CHOICE_KEYS,
   MISTAKE_REASONS,
@@ -25,6 +26,7 @@ interface SolvePageProps {
     answer: ChoiceKey,
     reason: MistakeReason | undefined,
     isReview: boolean,
+    solveTimeMs?: number,
   ) => void
   onSessionComplete: (session: Omit<StudySession, 'id'>) => void
   onGoRegister: () => void
@@ -80,13 +82,6 @@ function shuffleQuestionGroups(questions: Question[], seed?: string): Question[]
   return shuffleItems([...groups.values()]).flat()
 }
 
-function formatDuration(durationMs: number): string {
-  const totalSeconds = Math.max(0, Math.floor(durationMs / 1000))
-  const minutes = Math.floor(totalSeconds / 60)
-  const seconds = totalSeconds % 60
-  return `${minutes}:${seconds.toString().padStart(2, '0')}`
-}
-
 export function SolvePage({
   questions,
   isReview = false,
@@ -101,6 +96,8 @@ export function SolvePage({
   )
   const [practicePart, setPracticePart] = useState<PartFilter>('all')
   const [practiceShuffleSeed, setPracticeShuffleSeed] = useState(makeShuffleSeed)
+  const [practiceStartedAt, setPracticeStartedAt] = useState(Date.now)
+  const [practiceAnsweredAt, setPracticeAnsweredAt] = useState<number | null>(null)
   const [index, setIndex] = useState(0)
   const [selected, setSelected] = useState<ChoiceKey | null>(null)
   const [reason, setReason] = useState<MistakeReason | ''>('')
@@ -110,6 +107,8 @@ export function SolvePage({
   const [examIndex, setExamIndex] = useState(0)
   const [examAnswers, setExamAnswers] = useState<Record<string, ChoiceKey>>({})
   const [examWrongReasons, setExamWrongReasons] = useState<Record<string, MistakeReason | ''>>({})
+  const [examQuestionTimes, setExamQuestionTimes] = useState<Record<string, number>>({})
+  const [examActiveStartedAt, setExamActiveStartedAt] = useState<number | null>(null)
   const [examSubmitted, setExamSubmitted] = useState(false)
   const [examSaved, setExamSaved] = useState(false)
   const [examStartedAt, setExamStartedAt] = useState<number | null>(null)
@@ -145,9 +144,10 @@ export function SolvePage({
           question,
           answer,
           isCorrect: answer === question.correctAnswer,
+          solveTimeMs: examQuestionTimes[question.id] ?? 0,
         }
       }),
-    [examAnswers, examQuestions],
+    [examAnswers, examQuestionTimes, examQuestions],
   )
   const examCorrectCount = examResults.filter((result) => result.isCorrect).length
   const examWrongResults = examResults.filter((result) => !result.isCorrect)
@@ -156,6 +156,22 @@ export function SolvePage({
   const examElapsedMs = examStartedAt
     ? (examSubmitted ? (examEndedAt ?? nowMs) : nowMs) - examStartedAt
     : 0
+  const practiceElapsedMs = Math.max(0, (practiceAnsweredAt ?? nowMs) - practiceStartedAt)
+  const examCurrentElapsedMs =
+    examCurrent && examActiveStartedAt !== null && !examSubmitted
+      ? (examQuestionTimes[examCurrent.id] ?? 0) + Math.max(0, nowMs - examActiveStartedAt)
+      : examCurrent
+        ? (examQuestionTimes[examCurrent.id] ?? 0)
+        : 0
+  const examAverageQuestionTimeMs =
+    examQuestions.length === 0
+      ? 0
+      : Math.round(
+          examQuestions.reduce(
+            (sum, question) => sum + (examQuestionTimes[question.id] ?? 0),
+            0,
+          ) / examQuestions.length,
+        )
   const canSaveExamResults = examWrongResults.every(
     (result) => examWrongReasons[result.question.id],
   )
@@ -188,6 +204,10 @@ export function SolvePage({
   useEffect(() => {
     setSelected(null)
     setReason('')
+    const startedAt = Date.now()
+    setPracticeStartedAt(startedAt)
+    setPracticeAnsweredAt(null)
+    setNowMs(startedAt)
   }, [current?.id])
 
   useEffect(() => {
@@ -204,10 +224,13 @@ export function SolvePage({
   }, [examPool.length])
 
   useEffect(() => {
-    if (!examStarted || examSubmitted) return undefined
+    const shouldTick =
+      (mode === 'practice' && !selected && studyQuestions.length > 0) ||
+      (examStarted && !examSubmitted)
+    if (!shouldTick) return undefined
     const intervalId = window.setInterval(() => setNowMs(Date.now()), 1000)
     return () => window.clearInterval(intervalId)
-  }, [examStarted, examSubmitted])
+  }, [examStarted, examSubmitted, mode, selected, studyQuestions.length])
 
   if (baseStudyQuestions.length === 0) {
     return (
@@ -236,9 +259,35 @@ export function SolvePage({
     )
   }
 
+  const getExamQuestionTimesWithCurrent = (timestamp = Date.now()) => {
+    if (!examStarted || examSubmitted || !examCurrent || examActiveStartedAt === null) {
+      return examQuestionTimes
+    }
+
+    const elapsedMs = Math.max(0, timestamp - examActiveStartedAt)
+    return {
+      ...examQuestionTimes,
+      [examCurrent.id]: (examQuestionTimes[examCurrent.id] ?? 0) + elapsedMs,
+    }
+  }
+
+  const commitExamCurrentTime = (timestamp = Date.now()) => {
+    const nextTimes = getExamQuestionTimesWithCurrent(timestamp)
+    setExamQuestionTimes(nextTimes)
+    setExamActiveStartedAt(timestamp)
+    return nextTimes
+  }
+
+  const selectPracticeAnswer = (answer: ChoiceKey) => {
+    const answeredAt = Date.now()
+    setSelected(answer)
+    setPracticeAnsweredAt(answeredAt)
+    setNowMs(answeredAt)
+  }
+
   const handleNext = () => {
     if (!selected || (!isCorrect && !reason)) return
-    onAnswer(current.id, selected, reason || undefined, isReview)
+    onAnswer(current.id, selected, reason || undefined, isReview, practiceElapsedMs)
     if (index >= studyQuestions.length - 1) {
       setPracticeShuffleSeed(makeShuffleSeed())
     }
@@ -259,6 +308,8 @@ export function SolvePage({
     setExamQuestions([])
     setExamAnswers({})
     setExamWrongReasons({})
+    setExamQuestionTimes({})
+    setExamActiveStartedAt(null)
     setExamSubmitted(false)
     setExamSaved(false)
     setExamIndex(0)
@@ -271,16 +322,21 @@ export function SolvePage({
     setExamQuestions(shuffleQuestionGroups(examPool).slice(0, safeExamCount))
     setExamAnswers({})
     setExamWrongReasons({})
+    setExamQuestionTimes({})
     setExamSubmitted(false)
     setExamSaved(false)
     setExamIndex(0)
-    setExamStartedAt(Date.now())
+    const startedAt = Date.now()
+    setExamStartedAt(startedAt)
+    setExamActiveStartedAt(startedAt)
     setExamEndedAt(null)
   }
 
   const submitExamSession = () => {
     if (unansweredCount > 0) return
-    setExamEndedAt(Date.now())
+    const endedAt = Date.now()
+    commitExamCurrentTime(endedAt)
+    setExamEndedAt(endedAt)
     setExamSubmitted(true)
   }
 
@@ -294,7 +350,7 @@ export function SolvePage({
         answer === question.correctAnswer
           ? undefined
           : examWrongReasons[question.id] || undefined
-      onAnswer(question.id, answer, reason, false)
+      onAnswer(question.id, answer, reason, false, examQuestionTimes[question.id])
     })
     onSessionComplete({
       mode: 'exam',
@@ -316,10 +372,13 @@ export function SolvePage({
     setExamQuestions(shuffleQuestionGroups(wrongQuestions))
     setExamAnswers({})
     setExamWrongReasons({})
+    setExamQuestionTimes({})
     setExamSubmitted(false)
     setExamSaved(false)
     setExamIndex(0)
-    setExamStartedAt(Date.now())
+    const startedAt = Date.now()
+    setExamStartedAt(startedAt)
+    setExamActiveStartedAt(startedAt)
     setExamEndedAt(null)
   }
 
@@ -413,7 +472,7 @@ export function SolvePage({
                   wrongChoice ? 'wrong' : ''
                 }`}
                 disabled={revealed}
-                onClick={() => setSelected(key)}
+                onClick={() => selectPracticeAnswer(key)}
               >
                 <span className="choice-key">{key}</span>
                 <span>{current.choices[key]}</span>
@@ -449,6 +508,9 @@ export function SolvePage({
 
         {selected && (
           <div className="solve-actions">
+            <span className="question-time-label">
+              풀이 시간 {formatDuration(practiceElapsedMs)}
+            </span>
             <button
               className="button primary"
               type="button"
@@ -583,7 +645,10 @@ export function SolvePage({
               className="button ghost"
               type="button"
               disabled={examIndex === 0}
-              onClick={() => setExamIndex((currentIndex) => currentIndex - 1)}
+              onClick={() => {
+                commitExamCurrentTime()
+                setExamIndex((currentIndex) => currentIndex - 1)
+              }}
             >
               이전
             </button>
@@ -591,11 +656,17 @@ export function SolvePage({
               {answeredCount} / {examQuestions.length} 답변
             </span>
             <span className="exam-answer-count">시간 {formatDuration(examElapsedMs)}</span>
+            <span className="exam-answer-count">
+              현재 문제 {formatDuration(examCurrentElapsedMs)}
+            </span>
             <button
               className="button ghost"
               type="button"
               disabled={examIndex === examQuestions.length - 1}
-              onClick={() => setExamIndex((currentIndex) => currentIndex + 1)}
+              onClick={() => {
+                commitExamCurrentTime()
+                setExamIndex((currentIndex) => currentIndex + 1)
+              }}
             >
               다음
             </button>
@@ -620,7 +691,9 @@ export function SolvePage({
           <span className="eyebrow">RESULT</span>
           <h3>{examAccuracy}%</h3>
           <p>
-            {examCorrectCount} / {examQuestions.length}문제 정답 · {formatDuration(examElapsedMs)}
+            {examCorrectCount} / {examQuestions.length}문제 정답 · 총{' '}
+            {formatDuration(examElapsedMs)} · 문제당 평균{' '}
+            {formatDuration(examAverageQuestionTimeMs)}
           </p>
         </div>
         <div className="result-actions">
@@ -670,7 +743,9 @@ export function SolvePage({
                   {result.isCorrect ? '정답' : '오답'}
                 </span>,
               )}
-              <span className="question-number">#{resultIndex + 1}</span>
+              <span className="question-number">
+                #{resultIndex + 1} · {formatDuration(result.solveTimeMs)}
+              </span>
             </div>
             {renderPassage(result.question)}
             <h3 className="question-text">{result.question.questionText}</h3>

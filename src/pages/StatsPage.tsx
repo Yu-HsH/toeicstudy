@@ -1,25 +1,21 @@
 import { EmptyState } from '../components/EmptyState'
 import type { Question, StudySession } from '../types'
 import { getQuestionStats } from '../utils/stats'
+import { formatDuration } from '../utils/time'
 
 interface StatsPageProps {
   questions: Question[]
   sessions: StudySession[]
 }
 
-function formatDuration(durationMs: number): string {
-  const totalSeconds = Math.max(0, Math.floor(durationMs / 1000))
-  const minutes = Math.floor(totalSeconds / 60)
-  const seconds = totalSeconds % 60
-  return `${minutes}:${seconds.toString().padStart(2, '0')}`
-}
-
 function BarList({
   items,
   emptyText,
+  formatValue = (value: number) => String(value),
 }: {
   items: { label: string; value: number }[]
   emptyText: string
+  formatValue?: (value: number) => string
 }) {
   const max = Math.max(...items.map((item) => item.value), 1)
   const visibleItems = items.filter((item) => item.value > 0)
@@ -32,7 +28,7 @@ function BarList({
           <span className="bar-track">
             <span style={{ width: `${Math.max((item.value / max) * 100, 8)}%` }} />
           </span>
-          <strong>{item.value}</strong>
+          <strong>{formatValue(item.value)}</strong>
         </div>
       ))}
     </div>
@@ -85,6 +81,11 @@ export function StatsPage({ questions, sessions }: StatsPageProps) {
               <small>복습 {stats.reviewAttemptCount}회 기준</small>
             </div>
             <div className="stat-card">
+              <span>평균 풀이 시간</span>
+              <strong>{formatDuration(stats.averageSolveTimeMs)}</strong>
+              <small>시간 기록 {stats.timedAttemptCount}회 기준</small>
+            </div>
+            <div className="stat-card">
               <span>최근 실전</span>
               <strong>{stats.recentSessionAccuracy}%</strong>
               <small>최근 7일 세트 기준</small>
@@ -120,6 +121,17 @@ export function StatsPage({ questions, sessions }: StatsPageProps) {
                 <span>누적 오답 태그</span>
               </div>
               <BarList items={stats.tagMistakes} emptyText="오답 태그가 아직 없습니다." />
+            </div>
+            <div className="panel chart-card">
+              <div className="card-title-row">
+                <h3>시간 오래 걸린 문제</h3>
+                <span>평균 풀이 시간</span>
+              </div>
+              <BarList
+                items={stats.slowQuestions}
+                emptyText="아직 시간 기록이 없습니다."
+                formatValue={formatDuration}
+              />
             </div>
             <div className="panel chart-card">
               <div className="card-title-row">
